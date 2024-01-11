@@ -7,11 +7,11 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Direct", "Referral", "Social"],
+    labels: ["Chihuahua Contrataca", "Perro Revolution", "A dino Eating you", "my michele", "my moomy", "Aquela Ursa","Bad HUmor", "two cats", "four cats", "nine cats",  "ten cats",  "the cats",  "all cats",  "black cats",  "blue cats",  ],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+      data: [105, 55, 30, 15,1,2,3,4,5,10,6,9,1,12,12],
+      backgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b', '#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b','#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b'],
+      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b', '#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b','#2e59d9', '#17a673', '#2c9faf', '#f6c23e', '#e74a3b'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },
