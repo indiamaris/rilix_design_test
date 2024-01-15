@@ -44,7 +44,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverRadius: 3,
       pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-      pointHitRadius: 10,
+      pointHitRadius: 100,
       pointBorderWidth: 2,
       data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
     }],
@@ -69,12 +69,12 @@ var myLineChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 7
+          maxTicksLimit: 10
         }
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 5,
+          maxTicksLimit: 10,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
@@ -106,7 +106,7 @@ var myLineChart = new Chart(ctx, {
       displayColors: false,
       intersect: false,
       mode: 'index',
-      caretPadding: 10,
+      caretPadding: 12,
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
@@ -114,5 +114,5 @@ var myLineChart = new Chart(ctx, {
         }
       }
     }
-  }
+  },
 });
