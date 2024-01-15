@@ -26,7 +26,7 @@ var data  = [
     },
     {
         month: 'july', nested:
-            { count: 40, countB: 670, countD: 950, countE: 900, countF: 1200, countG: 290, countH: 900, countI: 190, countJ: 760, countK: 260, countL: 890 }
+            { count: 40, countB: 670, countD: 950, countE: 900, countF: 500, countG: 290, countH: 900, countI: 190, countJ: 760, countK: 260, countL: 890 }
     },
     {
         month: 'aug', nested:
@@ -54,7 +54,8 @@ var data  = [
 var ctx = document.getElementById('consumers')
  
 var consumers = new Chart(ctx,   {
-      type: 'bar',
+  type: 'bar', responsive:true,
+  
       data: {
         labels: data.map(row => row.month), 
         
@@ -80,7 +81,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#FFCCFF",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#FFCCFF",
       borderColor: "#FFCCFF",
             label: 'Disney Itajai',
              barThickness: 6
@@ -90,8 +91,8 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#E5FFCC",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#E5FFCCf",
+      hoverBackgroundColor: "#E5FFCC",
+      borderColor: "#E5FFCC",
             label: ' Beto Carreiro',
              barThickness: 6
              ,
@@ -110,7 +111,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#55ff00",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#55ff00",
       borderColor: "#55ff00",
             label: 'BC Shopping',
              barThickness: 6,
@@ -119,7 +120,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#ff00fc",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#ff00fc",
       borderColor: "#ff00fc",
             label: 'Camelo',
              barThickness: 6
@@ -129,7 +130,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
                 backgroundColor: "#00ffa7",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor:"#00ffa7",
       borderColor: "#00ffa7",
             label: 'Rocinha',
              barThickness: 6
@@ -139,7 +140,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#4e73df",
       borderColor: "#4e73df",
             label: 'Holywod',
              barThickness: 6
@@ -149,7 +150,7 @@ var consumers = new Chart(ctx,   {
           ,
           {
              backgroundColor: "#00fffb",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#00fffb",
       borderColor: "#00fffb",
             label: 'casa de lares',
              barThickness: 6
@@ -159,7 +160,7 @@ var consumers = new Chart(ctx,   {
            ,
           {
              backgroundColor: "#c4ff00",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor: "#c4ff00",
       borderColor: "#c4ff00",
             label: 'Indialandia',
              barThickness: 6
@@ -167,9 +168,9 @@ var consumers = new Chart(ctx,   {
             data: data.map(row => row.nested.countH)
           },
           {
-             backgroundColor: "#fffc00",
+             backgroundColor: "#2e59d9",
       hoverBackgroundColor: "#2e59d9",
-      borderColor: "#fffc00",
+      borderColor: "#2e59d9",
             label: 'Ali do lado',
              barThickness: 6
              ,
@@ -177,14 +178,23 @@ var consumers = new Chart(ctx,   {
           },
           {
              backgroundColor: "#ff007a",
-      hoverBackgroundColor: "#2e59d9",
+      hoverBackgroundColor:  "#ff007a",
       borderColor: "#ff007a",
             label: 'Adilsonlandia',
              barThickness: 6
              ,
             data: data.map(row => row.nested.countL)
-          }
-        ]
-      }
-    })
+          }, 
+        ] },
+    options: {
+        scales: {
+        yAxes: [{
+            gridLines: {
+                offsetGridLines: true
+          },
+           ticks: { beginAtZero: true }
+        }]
+    }
+    }
+});
  
