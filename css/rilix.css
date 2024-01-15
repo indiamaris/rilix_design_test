@@ -1,2 +1,9 @@
-.rilixIcon{width: 60px;transform: rotate(15deg);}
 
+@media screen and (max-width: 991px) {
+    
+.hidInPhone {
+    display:none;
+    visibility:hidden;
+}
+
+.rilixIcon{width: 60px;transform: rotate(15deg);}
