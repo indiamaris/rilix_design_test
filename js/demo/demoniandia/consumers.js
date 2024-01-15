@@ -186,13 +186,14 @@ var consumers = new Chart(ctx,   {
             data: data.map(row => row.nested.countL)
           }, 
         ] },
-    options: {
+  options: {
+      maintainAspectRatio: false,
         scales: {
         yAxes: [{
             gridLines: {
-                offsetGridLines: true
+                offsetGridLines: false
           },
-           ticks: { beginAtZero: true }
+           ticks: { beginAtZero: false  }
         }]
     }
     }
