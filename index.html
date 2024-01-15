@@ -10,7 +10,11 @@
     <meta name="author" content="Indiamaris">
 
     <title>Rilix Admin 2 - Dashboard</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="./css/rilix.css" rel="stylesheet" type="text/css">
@@ -23,6 +27,8 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -72,7 +78,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">My Licenses Information </h6>
+                        <h6 class="collapse-header">My Licences Information </h6>
                         <a class="collapse-item" href="buttons.html">Top 10 more active</a>
 
                         <a class="collapse-item" href="cards.html">Top 10 less active</a>
@@ -249,7 +255,7 @@
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">My Wallet in 2024</h6>
                                     <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-calendar-alt "></i>
 
@@ -257,10 +263,34 @@
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+
+
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
+                                                    </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -281,11 +311,43 @@
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Scenarios January</h6>
                                     <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-calendar-alt"></i>
-                                        </a>
+                                            <i class="fas fa-calendar-alt "></i>
 
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+
+
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
+                                                    </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Card Body -->
@@ -317,24 +379,49 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <div class="col-xl-8 col-lg-7 hidInPhone">
+                        <div class="col-xxl-8 col-xl-8 col-lg-9 col-md-12 hidInPhone">
                             <div class="card shadow">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Consume in 2024</h6>
                                     <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-calendar-alt"></i>
+                                            <i class="fas fa-calendar-alt "></i>
+
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
                                             <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Initial calendar selector here</a>
-                                            <a class="dropdown-item" href="#">Final calendar selector here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Open all grapghs here</a>
+
+
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
+                                                    </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -349,7 +436,7 @@
 
 
                         <!-- Content Column -->
-                        <div class="col-xl-4 col-lg-5 overflow-auto">
+                        <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-12  overflow-auto">
 
                             <!-- Project Card Example -->
                             <div class="card shadow h-100 overflow-auto   ">
@@ -357,15 +444,46 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Top Hight and Low Active Licenses
+                                    <h6 class="m-0 font-weight-bold text-primary">Top Hight and Low Active Licences
                                     </h6>
                                     <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-calendar-alt"></i>
+                                            <i class="fas fa-calendar-alt "></i>
+
                                         </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
 
 
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
+                                                    </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -508,7 +626,8 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="./js/demo/demoniandia/consumers.js"></script>
     <script src="/path/to/cdn/fecha.min.js"></script>
-    <script src="/path/to/js/hotel-datepicker.min.js"></script>"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
 
 </body>
 
