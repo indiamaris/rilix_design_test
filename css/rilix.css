@@ -10,6 +10,17 @@
     background: #1652f0;
 }
 
+.coin-svg{
+  margin-bottom: 10%;
+
+}
+.coin-card{
+  width: 70%;
+  margin: 25px;
+  border-radius: 50px;
+padding: 15px;
+
+}
 
 
 .balance-stats {
