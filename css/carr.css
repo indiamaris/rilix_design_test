@@ -1,0 +1,31 @@
+
+
+.ulx {
+  display: flex;
+  list-style: none;
+  max-width: 90%;
+  margin-block: 2rem;
+  margin-inline: auto;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.lix {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 3rem;
+
+  aspect-ratio: 2/1;
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.lix:nth-child(odd) {
+  background-color: rgb(90, 112, 221);
+}
+
+.lix:nth-child(even) {
+  background-color: rgb(2, 13, 238);
+}
