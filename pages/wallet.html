@@ -163,35 +163,33 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
 
-                                            <div class=" text-x font-weight-bold text-primary text-uppercase mb-4">
+                                            <div class=" text-xl font-weight-bold text-dark text-uppercase mr-4 mb-4">
 
 
                                                 Tickets Balance Details
                                             </div>
                                             <span> Total Balance</span>
-                                            <div class="h2 mb-0 font-weight-bold text-xl text-gray-800">$40,000</div>
+                                            <div class="h2 m-4 font-weight-bold text-xl text-success">$40,000</div>
                                         </div>
 
 
                                     </div>
-                                    <div class=' row p-4 style = ' position: relative; display: flex;flex-direction:
-                                        column;'>
+                                    <div class=' row'>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="balance-stats">
+                                            <div class="balance-stats ">
                                                 <p>Profit Last Month</p>
                                                 <h3>$42,678</h3>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="balance-stats active">
+                                            <div class="balance-stats">
                                                 <p>Profit in 2024</p>
                                                 <h3>$12,678</h3>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=' row p-4 style = ' position: relative; display: flex;flex-direction:
-                                        column;'>
+                                    <div class=' row mt-4'>
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                             <div class="balance-stats">
                                                 <p>All discount Obtained Last Month</p>
@@ -205,8 +203,17 @@
                                                 <h3>$129,678</h3>
                                             </div>
                                         </div>
+                                        <div class="col-xl-12 mt-5 col-lg-6 col-md-2 col-sm-6 border-1 ">
+                                            <div class="balance-stats text-center border-1 bg-gradient-dark ">
+                                                <p class='text-uppercase '>something else here ????? </p>
+                                                <h3>$129,678</h3>
+                                                <h3>or maybe some message???</h3>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
+
 
                             </div>
                         </div>
@@ -219,52 +226,53 @@
 
 
                                 <div class="card-body">
-                                    <span>
+                                    <div class='d-flex justify-content-between mr-4'>
                                         <h6
                                             class="text-x text-left font-weight-bold text-success text-uppercase mb-4" />
-                                        Tickets Record in January 2024 &nbsp;
-                                        <span class="dropdown no-arrow text-right">
-                                            <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-calendar-alt "></i>
-
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                                aria-labelledby="dropdownMenuLink">
-                                                <div class="dropdown-header">Dropdown Header:</div>
-
-
-                                                <div>
-                                                    <div class='datapicker'>
-                                                        <div class="container fs-2">
-                                                            Start Date: <input id="startDate" width="150" />
-                                                            End Date: <input id="endDate" width="150" />
-                                                        </div>
-                                                        <script>
-                                                            var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-                                                            $('#startDate').datepicker({
-                                                                uiLibrary: 'bootstrap4',
-                                                                iconsLibrary: 'fontawesome',
-                                                                minDate: today,
-                                                                maxDate: function () {
-                                                                    return $('#endDate').val();
-                                                                }
-                                                            });
-                                                            $('#endDate').datepicker({
-                                                                uiLibrary: 'bootstrap4',
-                                                                iconsLibrary: 'fontawesome',
-                                                                minDate: function () {
-                                                                    return $('#startDate').val();
-                                                                }
-                                                            });
-                                                        </script>
+                                        Tickets Record in January 2024 &nbsp;</h6>
+                                      
+                                
+                                    <span class="dropdown no-arrow text-right">
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <i class="fas fa-calendar-alt "></i>
+                                    
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                    
+                                    
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
                                                     </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
                                                 </div>
-                                        </span>
+                                            </div>
+                                    </span>
                                 </div>
-                                </span>
+                                    </div>
 
-                                </h6>
+                             
 
                                 <div class="row no-gutters align-items-center">
 
@@ -421,21 +429,59 @@
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
                                 <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-
+                                    <div class="col">
+<div class='d-flex justify-content-between mr-4'>
                                         <div class=" text-xl font-weight-bold text-primary text-uppercase mb-4">
 
 
                                             wallet Records
                                         </div>
+                                         <span class="dropdown no-arrow text-right">
+                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <i class="fas fa-calendar-alt "></i>
+                                    
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                    
+                                    
+                                            <div>
+                                                <div class='datapicker'>
+                                                    <div class="container fs-2">
+                                                        Start Date: <input id="startDate" width="150" />
+                                                        End Date: <input id="endDate" width="150" />
+                                                    </div>
+                                                    <script>
+                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                                                        $('#startDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: today,
+                                                            maxDate: function () {
+                                                                return $('#endDate').val();
+                                                            }
+                                                        });
+                                                        $('#endDate').datepicker({
+                                                            uiLibrary: 'bootstrap4',
+                                                            iconsLibrary: 'fontawesome',
+                                                            minDate: function () {
+                                                                return $('#startDate').val();
+                                                            }
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        
+                                    </span>
+                                                </div>
+                                                </div>
                                         <!-- wallet  records-->
                                         <div class="card-body">
                                             <div>
-                                                <div>
-
-                                                </div>
+                               
                                                 <div class="table-responsive">
-                                                    <table class="table table-bordered" id="dataTable" width="100%"
+                                                    <table class="table table-bordered" id="dataTable" width="103%"
                                                         cellspacing="0">
                                                         <thead>
                                                             <tr>
