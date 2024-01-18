@@ -100,3 +100,8 @@ text-align: center;
  align-content: center;
 
 }
+
+.fake-icon{
+    border: 1px;
+    border-radius:50%;
+}
