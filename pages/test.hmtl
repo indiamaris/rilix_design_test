@@ -1,0 +1,99 @@
+ <div class='news-container  w-100 h-100 pl-4'>
+                        <div class='news-container-header'>
+                            <!-- <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                <h4 class="h5 text-gray-800 ml-3">Latest Rilix Announcements</h4>
+
+                            </div> -->
+                        </div>
+
+                        <div class='news-header col col-12'>
+                            <!-- item annoucement -->
+                            <div class='col coldi col-12'>
+                                <div class='col col-2 w-100'>
+                                    <img src="../img/rilix/up.png" alt="" class='news-pic-something rounded w-100'>
+                                </div>
+                                <div class='col col-10 '>
+                                    <h2 class='text-dark'>Update in Rilix Coaster</h2>
+                                    <p> Rilix Coaster is like, totally mind-blowing, you know? It's this wild ride that
+                                        takes you on a rollercoaster of
+                                        emotions, literally! Picture this: ych do somersaults. It's like a crazy dance
+                                        party for your adrenaline, with
+                                        unexpl-seeking unicorn took you on a joyride through a rainbow of chaos!</p>
+                                    <div class='author-card'>
+                                        <div class='com_india'>
+                                            <img src="/img/rilix-logo-white.svg" alt="" class='author-pic mr-2'>
+                                        </div>
+                                        <div class='com_india'>
+                                            <p class='author-name mr-2'><strong>Rilix</strong><br>10/12/2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- item annoucement -->
+                            <div class='col  coldi'>
+                                <div class='col col-2 w-100 '>
+                                    <img src="../img/rilix/up.png" alt="" class='news-pic-something rounded w-100'>
+                                </div>
+                                <div class='col col-10'>
+                                    <h2 class='text-dark'>Update in Rilix Coaster</h2>
+                                    <p> Rilix Coaster is like, totally mind-blowing, you know? It's this wild ride that
+                                        takes you on a rollercoaster of
+                                        emotions, literally! Picture this: you hop on, and suddenly, you're zooming
+                                        through loops and twists that make your
+                                        stomach do somersaults. It's like a crazy dance party for your adrenaline, with
+                                        unexpected drops that feel like falling
+                                        !</p>
+                                    <div class='author-card'>
+                                        <div class='com_india'>
+                                            <img src="/img/rilix-logo-white.svg" alt="" class='author-pic mr-2'>
+                                        </div>
+                                        <div class='com_india'>
+                                            <p class='author-name mr-2'><strong>Rilix</strong><br>10/12/2024</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- item annoucement -->
+                            <div class='col coldi'>
+                                <div class='col col-2 w-100 '>
+                                    <img src="../img/rilix/13.jpg" alt="" class='news-pic-something rounded'>
+                                </div>
+                                <div class='col col-10'>
+                                    <h2 class='text-dark'> Good News: 24% increase in the entertainment sector</h2>
+                                    <p> Rilix Coaster is like, totally mind-blowing, you know? It's this wild ride that
+                                        takes you on a rollercoaster of
+                                        emotions, literally! Picture this: you hop on, and suddenly, you're zooming
+                                        through loops and twists that make your
+                                        stomach do somersaults. It's like a crazy dance party for your adrenaline, with
+                                        unexpected drops that feel like falling
+                                        !</p>
+                                    <div class='author-card'>
+                                        <div class='com_india'>
+                                            <img src="/img/rilix/aline.png" alt="" class='author-pic mr-2'>
+                                        </div>
+                                        <div class='com_india'>
+                                            <p class='author-name mr-2'><strong>Aline Santana- </strong>Rilix Best
+                                                Friend<br>10/12/2024
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- <div class='card-body'>
+
+                                
+
+
+
+                        </div> -->
+                        </div>
+                    </div>

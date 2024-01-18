@@ -71,3 +71,32 @@ margin: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.bannerNextLevel{
+    /* background: aqua; */
+    height: 200px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(25, 0, 255, 0.5),
+    rgba(208, 231, 236, 0.5)
+  ), url('../img/rilix/ntFmJUZ8tw3ULD3tkBaAtf-1200-80.jpg');
+  
+  display:         flex;
+    display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+.mascara{
+     height: 200px;
+     width: 100%;
+background-color: rgba(236, 239, 241, 0.5);
+color: blue;
+font-size: 30px;
+text-align: center;
+/* align-items: center; */
+ /* justify-content: center; */
+ /* justify-items: center; */
+ align-content: center;
+
+}
