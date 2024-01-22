@@ -50,9 +50,51 @@ padding: 15px;
     opacity: 1;
   }
 }
-@media screen and (max-width: 991px) {
 
+@media screen and (max-width: 1465px) {
+.pricing-card-title{
+  font-size: 2rem;
+};
+
+}
+
+@media screen and (max-width: 1465px) {
+.pricing-card-title{
+  font-size: 2rem;
+};
+
+}
+
+@media screen and (max-width: 991px) {
+.pricing-card-title{
+  font-size: 3rem;
+};
 .hidInPhone {
     display:none;
     visibility:hidden;}
+
 };
+
+
+
+
+/* 
+
+@media breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+ */
