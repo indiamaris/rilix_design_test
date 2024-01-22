@@ -55,18 +55,18 @@ padding: 15px;
     visibility:invisible;}
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 .forPhoneIn{
       display:contents;
-    visibility:visible;};
+    visibility:visible;}
+
+     .hidInPhone {
+    display:none;}
 
 };
 
-@media screen and (max-width: 801px) {
-    .hidInPhone {
-    display:none;
-    visibility:hidden;}
-};
+
+
 
 
 
@@ -75,14 +75,11 @@ padding: 15px;
   font-size: 2rem;
 };
 
-}
-
-@media screen and (max-width: 1465px) {
-.pricing-card-title{
-  font-size: 2rem;
-};
 
 }
+
+
+
 
 @media screen and (max-width: 1500px) {
 .pricing-card-title{
