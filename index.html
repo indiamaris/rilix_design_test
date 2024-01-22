@@ -38,127 +38,196 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <!-- this line will incluse change on phone -->
-<div class=''>
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar ">
+        <div class='sidibar'>
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar hidInPhone">
 
-            <!-- Sidebar - Brand -->
-            <a class=" mt-4 sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
+                <!-- Sidebar - Brand -->
+                <a class=" mt-4 sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15">
 
-                    <img src="./img/rilix-logo-white.svg" alt="rilix icon" class='rilixIcon'>
+                        <img src="./img/rilix-logo-white.svg" alt="rilix icon" class='rilixIcon'>
 
+                    </div>
+
+                </a>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+
+
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Mind your business
                 </div>
 
-            </a>
+                <!-- Nav Item - Pages Collapse Menu -->
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <li class="nav-item">
 
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Mind your business
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-
-            <li class="nav-item">
+                    <a class="nav-link" href="./pages/licences.html">
+                        <i class="fas fa-solid fa-id-card"></i>
+                        <span> Licences</span></a>
 
 
-                <a class="nav-link" href="./pages/licences.html">
-                    <i class="fas fa-solid fa-id-card"></i>
-                    <span> Licences</span></a>
+                </li>
+
+                <li class="nav-item">
 
 
-            </li>
-
-            <li class="nav-item">
-
-
-                <a class="nav-link" href="./pages/coasters.html">
-                    <i class="fas fa-car-alt"></i>
-                    <span> Coasters</span></a>
+                    <a class="nav-link" href="./pages/coasters.html">
+                        <i class="fas fa-car-alt"></i>
+                        <span> Coasters</span></a>
 
 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/wallet.html">
-                    <i class="fas fa-wallet"></i>
-                    <span>Wallet</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/wallet.html">
+                        <i class="fas fa-wallet"></i>
+                        <span>Wallet</span></a>
 
 
-            </li>
-            <!-- Nav Item - Utilities Collapse Menu -->
+                </li>
+                <!-- Nav Item - Utilities Collapse Menu -->
 
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <!-- Divider -->
+                <hr class="sidebar-divider">
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Invest in your business
-            </div>
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Invest in your business
+                </div>
 
-            <li class="nav-item fs-1">
-                <a class="nav-link" href="./pages/store.html">
-                    <i class="fas fa-cart-plus fs-1"></i>
-                    <span class='fs-1'>Store</span></a>
-
-
-            </li>
+                <li class="nav-item fs-1">
+                    <a class="nav-link" href="./pages/store.html">
+                        <i class="fas fa-cart-plus fs-1"></i>
+                        <span class='fs-1'>Store</span></a>
 
 
-            <!-- Nav Item - Pages Collapse Menu -->
+                </li>
+
+
+                <!-- Nav Item - Pages Collapse Menu -->
 
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="./pages/news.html">
-                    <i class="fas fa-rss"></i>
-                    <span>News</span></a>
-            </li>
-            <!-- <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/news.html">
+                        <i class="fas fa-rss"></i>
+                        <span>News</span></a>
+                </li>
+                <!-- <li class="nav-item">
                 <a class="nav-link" href="./pages/newsB.html">
                     <i class="fas fa-rss"></i>
                     <span>News</span></a>
             </li> -->
 
-            <!-- Nav Item - Tables -->
+                <!-- Nav Item - Tables -->
 
-            <!-- divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline md-4 ">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+                <!-- divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline md-4 ">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
 
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex w-75 ">
-                <img class="sidebar-card-illustration mb-3 mt- " src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2 "><strong>Coins are aways on Sale</strong> The more you buy, the more
-                    discount
-                    you get! Visit our store and shop like a profit pro!</p>
-                <a class=" btn btn-success btn-sm" href="./pages/sale.html">
-                    Buy More, Pay Less!</a>
-            </div>
+                <!-- Sidebar Message -->
+                <div class="sidebar-card d-none d-lg-flex w-75 ">
+                    <img class="sidebar-card-illustration mb-3 mt- " src="img/undraw_rocket.svg" alt="...">
+                    <p class="text-center mb-2 "><strong>Coins are aways on Sale</strong> The more you buy, the more
+                        discount
+                        you get! Visit our store and shop like a profit pro!</p>
+                    <a class=" btn btn-success btn-sm" href="./pages/sale.html">
+                        Buy More, Pay Less!</a>
+                </div>
 
-        </ul>
-        <!-- End of Sidebar -->
-</div>
+            </ul>
+            <!-- End of Sidebar -->
+        </div>
+
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
+            <div class='forPhoneIn'>
+                <div class="bd-example forPhoneIn">
+                    <div class="pos-f-t forPhoneIn ">
+                        <div class="collapse show " id="navbarToggleExternalContent">
+                            <div class="bg-gradient-primary p-4">
 
+                                <a class=" sidebar-brand d-flex align-items-center justify-content-center"
+                                    href="index.html">
+                                    <div class="sidebar-brand-icon rotate-n-15">
+
+                                        <img src="./img/rilix-logo-white.svg" alt="rilix icon" class='rilixIcon'>
+
+                                    </div>
+
+                                </a>
+
+                                <ul class='navbar-nav text-center'>
+                                  
+                                    <li class="nav-item fs-1">
+                                        <a class="nav-link" href="./pages/store.html">
+                                            <i class="fas fa-cart-plus fs-1 text-white"></i>
+                                            <span class='fs-3 text-white'>Store</span></a>
+                                    </li>
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="./pages/licences.html">
+                                            <i class="fas fa-solid fa-id-card "></i>
+                                            <span> Licences</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="./pages/coasters.html">
+                                            <i class="fas fa-car-alt 
+                                            "></i>
+                                            <span> Coasters</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="./pages/wallet.html">
+                                            <i class="fas fa-wallet"></i>
+                                            <span>Wallet</span></a>
+
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- aqui temos o botaozinho de navbar lindissimo -->
+                        <nav class="navbar navbar-dark bg-gradient-primary">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
             <!-- Main Content -->
             <div id="content">
 
@@ -180,12 +249,13 @@
                             </div>
 
 
-                     
+
                             <div class="col   col-lg-3 col-md-3 pr-1  col-sm-12  ">
                                 <div class="nav-item dropdown no-arrow text-right">
                                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-800 pr-2 ">Douglas McGee </span>
+                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-800 pr-2 ">Douglas McGee
+                                        </span>
                                         <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
                                             style='height: 45px;'>
                                     </a>
@@ -651,7 +721,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
