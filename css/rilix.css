@@ -55,14 +55,18 @@ padding: 15px;
     visibility:invisible;}
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 .forPhoneIn{
       display:contents;
-    visibility:visible;}
+    visibility:visible;};
+
 };
 
-
-
+@media screen and (max-width: 801px) {
+    .hidInPhone {
+    display:none;
+    visibility:hidden;}
+};
 
 
 
@@ -85,9 +89,7 @@ padding: 15px;
   font-size: 3rem;
   
 };
-.hidInPhone {
-    display:none;
-    visibility:hidden;}
+
 
 };
 
@@ -95,7 +97,7 @@ padding: 15px;
 .pricing-card-title{
   font-size: 3rem;
   
-};
+};}
 
 
 
@@ -107,24 +109,3 @@ padding: 15px;
 
 
 
-
-/* 
-
-@media breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.4rem;
-  }
-}
- */
