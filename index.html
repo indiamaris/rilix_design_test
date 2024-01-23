@@ -146,9 +146,9 @@
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex w-75 ">
+            <div class="sidebar-card d-none d-lg-flex w-75 hidInPhone ">
                 <img class="sidebar-card-illustration mb-3 mt- " src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2 "><strong>Coins are aways on Sale</strong> The more you buy, the more
+                <p class="text-center mb-2 hidInPhone "><strong>Coins are aways on Sale</strong> The more you buy, the more
                     discount
                     you get! Visit our store and shop like a profit pro!</p>
                 <a class=" btn btn-success btn-sm" href="./pages/sale.html">
@@ -171,16 +171,16 @@
                             <button class="navbar-toggler border-0 text-white" type="button" data-toggle="collapse"
                                 data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                                 aria-expanded="true" aria-label="Toggle navigation ">
-                  <i class="fa fa-ellipsis-v border-0" aria-hidden="true"></i>
+                <i class="fas fa-solid fa-bars"></i>
                             </button>
                         </nav>
 
                         <!-- aqui acaba o botaozinho -->
                         <div class="collapse show " id="navbarToggleExternalContent">
-                            <div class="bg-primary p-1">
-                                <ul class='navbar-nav align-items-center table table-hover'>
+                            <div class="bg-primary p-1 pr-2">
+                                <ul class='navbar-nav align-items-start pl-2 table table-hover'>
 
-                                    <li class="nav-item fs-3 bg">
+                                    <li class="nav-item fs-3 bg ">
                                         <a class="nav-link" href="./pages/store.html">
                                             <i class="fas fa-cart-plus fs-1 text-white"></i>
                                             <span class='fs-2 text-white'>Store</span></a>
@@ -238,20 +238,27 @@
                     <!-- Page Heading -->
 
 
-                    <div class="col shadow mt-2 mb-4 m-1 rounded">
-
-                        <div class="row ">
-                            <div class=" col-md-9 col-md-3 col-sm-12  ">
-                                <p class='h3 mb-0 text-gray-800 pt-3 '>Dashboard - Home</p>
+                    <div class="col mt-1 rounded shado">
+                        <div class="row d-flex align-items-center justify-content-between " >
+                            
+                            <div class="text-gray-700 pl-2 ">  Dashboard
                             </div>
+                          
+                                
+                                <!-- <p>Dashboard</p> -->
+                                <!-- <ol class="breadcrumb bg-transparent">
+                                    <li class="breadcrumb-item"><a href="#">Wallet </a></li>
+                                    <li class="breadcrumb-item"><a href="#">Coasters</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                </ol> -->
+                              
 
-
-
-                            <div class="col   col-lg-3 col-md-3 pr-1  col-sm-12  ">
+                         
+                                
                                 <div class="nav-item dropdown no-arrow text-right">
                                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-800 pr-2 ">Douglas McGee
+                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-700 pr-2 hidInPhone">Douglas McGee
                                         </span>
                                         <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
                                             style='height: 45px;'>
@@ -263,14 +270,8 @@
                                             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                             Profile
                                         </a>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Activity Log
-                                        </a>
+                                        
+                                       
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#" data-toggle="modal"
                                             data-target="#logoutModal">
@@ -278,7 +279,7 @@
                                             Logout
                                         </a>
                                     </div>
-                                </div>
+                           
                             </div>
 
                         </div>
@@ -288,23 +289,32 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- My tickets Card Example -->
-                        <div class="col-xl-4 col-md-12 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                My Tickets</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-ticket-alt fa-2x text-gray-300"></i>
+                            <!-- Customers in my pretty Card Example -->
+                            <div class="col-xl-4 col-lg-12 col-md-12 mb-4">
+                                <div class="card border-left-info shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col mr-2">
+                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                    Saldo Ticckets atual
+                                                </div>
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50
+                                                            tickets</div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+                    
 
                         <!-- customer Card Example -->
                         <div class="col-xl-4 col-md-12 mb-4 hidInPhone">
@@ -324,31 +334,24 @@
                             </div>
                         </div>
 
-                        <!-- Customers in your country Card Example -->
-                        <div class="col-xl-4 col-lg-12 col-md-12 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Saldo Ticckets atual
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50
-                                                        tickets</div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    
+    <!-- My tickets Card Example -->
+    <div class="col-xl-4 col-md-12 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            My Tickets</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-ticket-alt fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
                     </div>
 
