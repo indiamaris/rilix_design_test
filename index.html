@@ -122,9 +122,6 @@
 
 
             <!-- Nav Item - Pages Collapse Menu -->
-
-
-
             <li class="nav-item">
                 <a class="nav-link" href="./pages/news.html">
                     <i class="fas fa-rss"></i>
@@ -179,8 +176,12 @@
                         <div class="collapse show " id="navbarToggleExternalContent">
                             <div class="bg-primary p-1 pr-2">
                                 <ul class='navbar-nav align-items-start pl-2 table table-hover'>
-
-                                    <li class="nav-item fs-3 bg ">
+                                    <li class="nav-item d-flex fs-3 bg text-white pt-3 w-100  rounded" 
+                                    <!-- style='background-color: aliceblue; opacity: 0.6' -->
+                                    >
+                                        <i class=" text-primary fas fa-fw fa-tachometer-alt"></i>
+                                        <span class='fs-2 text-primary'>Dashboard</span></a>
+                                        </li>
                                         <a class="nav-link" href="./pages/store.html">
                                             <i class="fas fa-cart-plus fs-1 text-white"></i>
                                             <span class='fs-2 text-white'>Store</span></a>
@@ -216,7 +217,58 @@
 
                                     </li>
 
+                                    
+
                                 </ul>
+                                <!-- Page Heading -->
+                      
+                                <!-- <span class='w-100' style='background-color: aliceblue'> </span> -->
+                       
+                               
+                                <div class="col rounded bg-transparent">
+                                    <div class="row d-flex align-items-center justify-content-between">
+                                
+                                        <div class=" pl-2 text-white"> 
+                                        </div>
+                                
+                                
+                                        <!-- <p>Dashboard</p> -->
+                                        <!-- <ol class="breadcrumb bg-transparent">
+                                                                    <li class="breadcrumb-item"><a href="#">Wallet </a></li>
+                                                                    <li class="breadcrumb-item"><a href="#">Coasters</a></li>
+                                                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                                                </ol> -->
+                                
+                                
+                                
+                                
+                                        <div class="nav-item dropdown no-arrow text-right text-white">
+                                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-white">Douglas McGee
+                                                </span>
+                                                <img class=" img-profile rounded-circle" src="img/undraw_profile.svg" style='height: 35px;'>
+                                            </a>
+                                            <!-- Dropdown - User Information -->
+                                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                                <a class="dropdown-item" href="#">
+                                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                                    Profile
+                                                </a>
+                                
+                                
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
+                                                    Logout
+                                                </a>
+                                            </div>
+                                
+                                        </div>
+                                
+                                    </div>
+                                </div>
+
 
                             </div>
                         </div>
@@ -235,62 +287,14 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-
-
-                    <div class="col mt-1 rounded shado">
-                        <div class="row d-flex align-items-center justify-content-between " >
-                            
-                            <div class="text-gray-700 pl-2 ">  Dashboard
-                            </div>
-                          
-                                
-                                <!-- <p>Dashboard</p> -->
-                                <!-- <ol class="breadcrumb bg-transparent">
-                                    <li class="breadcrumb-item"><a href="#">Wallet </a></li>
-                                    <li class="breadcrumb-item"><a href="#">Coasters</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                                </ol> -->
-                              
-
-                         
-                                
-                                <div class="nav-item dropdown no-arrow text-right">
-                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-700 pr-2 hidInPhone">Douglas McGee
-                                        </span>
-                                        <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
-                                            style='height: 45px;'>
-                                    </a>
-                                    <!-- Dropdown - User Information -->
-                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                        aria-labelledby="userDropdown">
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Profile
-                                        </a>
-                                        
-                                       
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#" data-toggle="modal"
-                                            data-target="#logoutModal">
-                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
-                                            Logout
-                                        </a>
-                                    </div>
-                           
-                            </div>
-
-                        </div>
-                    </div>
-
+                  
 
                     <!-- Content Row -->
                     <div class="row">
+        
 
                             <!-- Customers in my pretty Card Example -->
-                            <div class="col-xl-4 col-lg-12 col-md-12 mb-4">
+                            <div class="col-xl-4 col-lg-4 col-md-12  col-sm-4 mb-4 mt-2">
                                 <div class="card border-left-info shadow h-100 py-2">
                                     <div class="card-body">
                                         <div class="row no-gutters align-items-center">
@@ -307,7 +311,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-auto">
-                                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                                <i class="fas fa-clipboard-list fa-2x text-gray-300 hidInPhone"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -317,17 +321,17 @@
                     
 
                         <!-- customer Card Example -->
-                        <div class="col-xl-4 col-md-12 mb-4 hidInPhone">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                    <div class="col-xl-4 col-lg-4 col-md-12  col-sm-4 mb-4 mt-2">
+                        <div class="card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                                 Total 86 Consumers January 2024</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">Total 90 rides </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300 hidInPhone"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -336,17 +340,17 @@
 
                     
     <!-- My tickets Card Example -->
-    <div class="col-xl-4 col-md-12 mb-4">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+<div class="col-xl-4 col-lg-4 col-md-12 col-sm-4 mb-4 mt-2">
+    <div class="card border-left-info shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                             My Tickets</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                     </div>
                     <div class="col-auto">
-                        <i class="fas fa-ticket-alt fa-2x text-gray-300"></i>
+                        <i class="fas fa-ticket-alt fa-2x text-gray-300 hidInPhone"></i>
                     </div>
                 </div>
             </div>
