@@ -167,17 +167,34 @@
 
                         <!-- aqui acaba o botaozinho -->
                         <div class="collapse show " id="navbarToggleExternalContent">
-                            <div class="bg-primary p-1 pr-2">
+                            <div class="bg-primary pl-2">
                                 <ul class='navbar-nav align-items-start pl-2 table table-hover'>
-                                    <li class="nav-item d-flex fs-3 bg text-white pt-3 w-100  rounded">
-                                        <i class=" text-primary fas fa-fw fa-tachometer-alt"></i>
-                                        <span class='fs-2 text-primary'>Dashboard</span></a>
-                                    </li>
-                                    <a class="nav-link" href="./pages/store.html">
-                                        <i class="fas fa-cart-plus fs-1 text-white"></i>
-                                        <span class='fs-2 text-white'>Store</span></a>
+
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="./pages/licences.html">
+                                            <i class="fas fa-solid fa-id-card "></i>
+                                            <span> Dashboard</span></a>
+
 
                                     </li>
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="./pages/store.html">
+                                            <i class="fas fa-cart-plus fs-1 text-white"></i>
+                                            <span> Store</span></a>
+
+
+                                    </li>
+
+
+
+
+
 
                                     <li class="nav-item">
 
@@ -232,12 +249,6 @@
                                         </div>
 
 
-                                        <!-- <p>Dashboard</p> -->
-                                        <!-- <ol class="breadcrumb bg-transparent">
-                                                                    <li class="breadcrumb-item"><a href="#">Wallet </a></li>
-                                                                    <li class="breadcrumb-item"><a href="#">Coasters</a></li>
-                                                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                                                                </ol> -->
 
 
 
@@ -246,14 +257,14 @@
                                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span
-                                                    class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-white">Douglas
+                                                    class="d-none d-lg-inline   d-sm-inline  pr-2 hidInPhone text-white">Douglas
                                                     McGee
                                                 </span>
                                                 <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
                                                     style='height: 35px;'>
                                             </a>
                                             <!-- Dropdown - User Information -->
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                                 aria-labelledby="userDropdown">
                                                 <a class="dropdown-item" href="#">
                                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -267,7 +278,7 @@
                                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
                                                     Logout
                                                 </a>
-                                            </div>
+                                            </div> -->
 
                                         </div>
 
@@ -291,44 +302,47 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-<div class='row justify-content-between  m-2'>
-    <div><p class='gray mt-2'>DanshBoard</p></div>
-    
-<div class="row d-flex justify-content-end">
-    <div class="nav-item dropdown no-arrow text-right text-white">
-        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
-                McGee
-            </span>
-            
-        </a>
-        
-        <!-- Dropdown - User Information -->
-        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">
-                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                Profile
-            </a>
-    
-    
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
-                Logout
-            </a>
-        </div>
-    
-    </div>
-    <img class=" img-profile rounded-circle" src="img/undraw_profile.svg" style='height: 35px;'>
-</div>
-</div>
+                    <div class='row justify-content-between  m-2 hidInPhone'>
+                        <div>
+                            <p class='gray mt-2'>DanshBoard</p>
+                        </div>
+
+                        <div class="row d-flex justify-content-end">
+                            <div class="nav-item dropdown no-arrow text-right text-white">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
+                                        McGee
+                                    </span>
+
+                                </a>
+
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
+
+
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
+                                        Logout
+                                    </a>
+                                </div>
+
+                            </div>
+                            <img class=" img-profile rounded-circle" src="img/undraw_profile.svg" style='height: 35px;'>
+                        </div>
+                    </div>
 
 
 
                     <!-- Content Row -->
                     <div class="row">
-                        
+
 
 
                         <!-- Customers in my pretty Card Example -->
@@ -735,7 +749,7 @@
             </div>
         </div>
         <!-- End of Content Wrapper -->
-            <!-- END OF sidebar on celphone -->
+        <!-- END OF sidebar on celphone -->
     </div>
     <!-- End of Page Wrapper -->
 
