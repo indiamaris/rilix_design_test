@@ -56,6 +56,19 @@ padding: 15px;
 
 
 @media screen and (max-width: 900px) {
+
+  .noPaddingOnPhone{
+        margin:0;
+    padding:0;
+  
+  }
+
+  .container-fluid{
+    margin: 0;
+    padding:0;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
 .forPhoneIn{
       display:contents;
     visibility:visible;}
