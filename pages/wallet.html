@@ -442,94 +442,95 @@
                             </div>
                         </div>
                     </div>
-               
-                <div class="row   .noPaddingOnPhone">
-                    <div class="col-xl-12 col-md-12 mb-4 ">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col col-m-6">
-                                        <div class='d-flex justify-content-between mr-4'>
-                                     <div class=" text-xl font-weight-bold text-primary text-uppercase mb-4">
+
+                    <div class="row   .noPaddingOnPhone">
+                        <div class="col-xl-12 col-md-12 mb-4 ">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col col-m-4">
+                                            <div class='d-flex justify-content-between mr-4'>
+                                                <div class=" text-xl font-weight-bold text-primary text-uppercase mb-4">
 
 
-                                                wallet Records
-                                            </div>
-                                            <span class="dropdown no-arrow text-right">
-                                                <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-calendar-alt "></i>
-
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                                    aria-labelledby="dropdownMenuLink">
-                                                    <div class="dropdown-header">Dropdown Header:</div>
-
-
-                                                    <div>
-                                                        <div class='datapicker'>
-                                                            <div class="container fs-2">
-                                                                Start Date: <input id="startDate" width="150" />
-                                                                End Date: <input id="endDate" width="150" />
+                                                    wallet Records
+                                                </div>
+                                                <div class='d.flex align-items-start justify-content-end'>
+                                                    <div class='col-md-4'>
+                                                        <div class="search d-flex justify-content-between pt-1 ">
+                                                            <div class=' title'>
+                                                                <!-- <h6 class="text-x text-left font-weight-bold text-success text-uppercase " />
+                                                                            My Licences 2024&nbsp;</h6> -->
                                                             </div>
-                                                            <script>
-                                                                var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-                                                                $('#startDate').datepicker({
-                                                                    uiLibrary: 'bootstrap4',
-                                                                    iconsLibrary: 'fontawesome',
-                                                                    minDate: today,
-                                                                    maxDate: function () {
-                                                                        return $('#endDate').val();
-                                                                    }
-                                                                });
-                                                                $('#endDate').datepicker({
-                                                                    uiLibrary: 'bootstrap4',
-                                                                    iconsLibrary: 'fontawesome',
-                                                                    minDate: function () {
-                                                                        return $('#startDate').val();
-                                                                    }
-                                                                });
-                                                            </script>
+
+                                                            <div class=' icon  d-flex align-items-start'>
+                                                                <div class='search'>
+
+                                                                    <div class="input-group " style='height: 35px;'>
+
+                                                                        <input style='height: 25px; width: 250px;'
+                                                                            type="text"
+                                                                            class="form-control bg-light border-1"
+                                                                            placeholder="Search for licence..."
+                                                                            aria-label="Search"
+                                                                            aria-describedby="basic-addon2">
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="icon ml-2">
+                                                                    <i class=" text-primary fas fa-calendar-alt "></i>
+                                                                </div>
+                                                            </div>
+
+
+
                                                         </div>
                                                     </div>
 
-                                            </span>
+
+
+                                                </div>
+                                            </div>
+                                            <!-- wallet  records-->
                                         </div>
+
+
                                     </div>
-                                    <!-- wallet  records-->
-                                    <div class="card-body">
-                                        <div>
 
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered" id="dataTable" width="103%"
-                                                    cellspacing="0">
-                                                    <thead>
-                                                        <tr>
-                                                            <th><i class="fas fa-sort-alpha-down-alt"></i> Date</th>
-                                                            <th><i class="fas fa-sort-amount-down-alt"></i>
-                                                                Submitted
-                                                            </th>
-                                                            <th><i class="fas fa-sort-amount-up-alt"></i> License
-                                                                key</th>
+                                    <div class="card-body ">
 
-                                                            <th><i class="fas fa-sort-amount-down-alt"> Description</i>
-                                                            </th>
 
-                                                            <th> <i class="fas fa-sort-amount-down-alt"></i> Price
-                                                            </th>
-                                                            <th> <i class="fas fa-sort-amount-down-alt"></i> Credits
-                                                            </th>
-                                                            <th> <i class="fas fa-sort-amount-down-alt"></i> Expired
-                                                                Credits
-                                                            </th>
-                                                            <th> <i class="fas fa-sort-amount-down-alt"></i>
-                                                                Discount
-                                                            </th>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" id="dataTable" width="103%"
+                                                cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th><i class="fas fa-sort-alpha-down-alt"></i> Date</th>
+                                                        <th><i class="fas fa-sort-amount-down-alt"></i>
+                                                            Submitted
+                                                        </th>
+                                                        <th><i class="fas fa-sort-amount-up-alt"></i> License
+                                                            key</th>
 
-                                                        </tr>
-                                                    </thead>
+                                                        <th><i class="fas fa-sort-amount-down-alt">
+                                                                Description</i>
+                                                        </th>
 
-                                                    <!-- <tfoot>
+                                                        <th> <i class="fas fa-sort-amount-down-alt"></i> Price
+                                                        </th>
+                                                        <th> <i class="fas fa-sort-amount-down-alt"></i> Credits
+                                                        </th>
+                                                        <th> <i class="fas fa-sort-amount-down-alt"></i> Expired
+                                                            Credits
+                                                        </th>
+                                                        <th> <i class="fas fa-sort-amount-down-alt"></i>
+                                                            Discount
+                                                        </th>
+
+                                                    </tr>
+                                                </thead>
+
+                                                <!-- <tfoot>
                                                         <tr>
                                                             <th><i class="fas fa-sort-alpha-down-alt"></i> License
                                                                 label- Description</th>
@@ -553,120 +554,119 @@
 
                                                         </tr>
                                                     </tfoot> -->
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
 
 
-                                                            <td>$320,800</td>
+                                                        <td>$320,800</td>
 
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
-
-
-                                                            <td>$320,800</td>
-
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
 
 
-                                                            <td>$320,800</td>
+                                                        <td>$320,800</td>
 
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
-
-
-                                                            <td>$320,800</td>
-
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
 
 
-                                                            <td>$320,800</td>
+                                                        <td>$320,800</td>
 
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2023-10-24</td>
-                                                            <td>2023-10-24</td>
-                                                            <td>
-                                                                ....444444
-                                                            </td>
-                                                            <td>some here th</td>
-
-
-                                                            <td>$320,800</td>
-
-                                                            <td>10,800</td>
-                                                            <td>800</td>
-                                                            <td>$100</td>
-                                                        </tr>
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
 
 
+                                                        <td>$320,800</td>
+
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
+
+
+                                                        <td>$320,800</td>
+
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-24</td>
+                                                        <td>2023-10-24</td>
+                                                        <td>
+                                                            ....444444
+                                                        </td>
+                                                        <td>some here th</td>
+
+
+                                                        <td>$320,800</td>
+
+                                                        <td>10,800</td>
+                                                        <td>800</td>
+                                                        <td>$100</td>
+                                                    </tr>
 
 
 
-                                                    </tbody>
-                                                </table>
-                                                <div class="d-flex justify-content-between">
 
-                                                    <div class="dataA">
-                                                        <table>
-                                                            <tr> Total credits add: <strong>10</strong></tr>
-                                                        </table>
-                                                    </div>
-                                                    <div class="dataB">
-                                                        <table>
 
-                                                            <tr> Total Customers: <strong>234</strong></tr>
-                                                        </table>
-                                                    </div>
+                                                </tbody>
+                                            </table>
+                                            <div class="d-flex justify-content-between">
+
+                                                <div class="dataA">
+                                                    <table>
+                                                        <tr> Total credits add: <strong>10</strong></tr>
+                                                    </table>
                                                 </div>
+                                                <div class="dataB">
+                                                    <table>
 
+                                                        <tr> Total Customers: <strong>234</strong></tr>
+                                                    </table>
+                                                </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -675,14 +675,15 @@
                     </div>
                 </div>
             </div>
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span> &copy;Rilix 2024</span>
-                    </div>
-                </div>
-            </footer>
         </div>
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span> &copy;Rilix 2024</span>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     </div>
 
