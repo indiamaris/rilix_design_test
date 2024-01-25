@@ -149,12 +149,42 @@
                 <!-- End of Topbar -->
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mt-4 mb-4">
-                    <h1 class="h3 mb-0 text-gray-800"> Dashboard - Licence XXXXXXXX</h1>
-
-                </div>
+            
                 <div class="container-fluid">
+<div class='row justify-content-between  m-2 hidInPhone'>
+    <div>
+        <p class='gray mt-2'>Licence</p>
+    </div>
 
+    <div class="row d-flex justify-content-end">
+        <div class="nav-item dropdown no-arrow text-right text-white">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
+                    McGee
+                </span>
+
+            </a>
+
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                </a>
+
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
+                    Logout
+                </a>
+            </div>
+
+        </div>
+        <img class=" img-profile rounded-circle" src="img/undraw_profile.svg" style='height: 35px;'>
+    </div>
+</div>
                     <!-- Page Heading -->
 
                     <div class="row mr-5">
@@ -168,7 +198,7 @@
                                             <div class=" text-xl font-weight-bold text-dark text-uppercase mb-4">
 
 
-                                                Licence: Laurentina
+                                                Licence: Laurentina (here we put the NAME of the licence)
                                             </div>
                                             <span> <strong>Key:</strong> 66786786557674645342311</span>
                                             <br>
@@ -220,9 +250,9 @@
 
                         <div class="col col-lg-5">
 
-                            <div class="card shadow border-left-warning mb-4">
+                            <!-- <div class="card shadow border-left-warning mb-4"> -->
                                 <!-- Card Header - Dropdown -->
-                                <div
+                                <!-- <div
                                     class="card-header  py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold ">Consumptions this week</h6>
                                     <div class="dropdown no-arrow">
@@ -264,14 +294,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Card Body -->
-                                <div class="card-body" style='height: 500px' ;>
+                                <!-- <div class="card-body" style='height: 500px' ;>
                                     <div class="h-100">
                                         <canvas id="myAreaChart"></canvas>
                                     </div>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
 
 
                             <div class="card shadow mb-4 border-left-info">
@@ -332,16 +362,16 @@
 
                         </div>
                         <div class="col hidInPhone col-lg-7 ">
-                            <div class="card shadow mb-4
+                            <div class="card shadow mb-4 
                             ">
 
-                                <div class=" hidInPhone card border-left-success shadow h-100 py-2">
-                                    <div class="card-body ">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col">
-                                                <div class='d-flex justify-content-between mr-4'>
+                                <div class=" hidInPhone card border-left-success shadow  py-2">
+                                    <div class="card-body h-50">
+                                        <div class="row no-gutters align-items-center h-50">
+                                            <div class="col h-50">
+                                                <div class='d-flex justify-content-between h-50 mr-4'>
                                                     <div
-                                                        class=" text-xl font-weight-bold text-primary text-uppercase mb-4">
+                                                        class=" text-xl font-weight-bold text-primary text-uppercase mb-4 h-50">
 
 
                                                         Licence Info
@@ -674,9 +704,9 @@ Licence
 
 
                 </div>
-                <div class="card shadow mb-4 border-left-danger m-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <!-- <div class="card shadow mb-4 border-left-danger m-4">
+                   Card Header - Dropdown -->
+                    <!-- <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                         <h6 class="m-0 font-weight-bold text-primary">Consume in 2024</h6>
                         <div class="dropdown no-arrow">
                             <a class="dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
@@ -717,17 +747,17 @@ Licence
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Card Body -->
-                    <div class="card-body" style='height: 500px' ;>
+                    <!-- <div class="card-body" style='height: 500px' ;>
                         <div class="h-100">
                             <canvas h-100 id="consumers"></canvas>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+                <!-- </div> --> 
+            <!-- </div> -->
 
-        </div>
+        <!-- </div> -->
         <!-- Content Column -->
 
 
@@ -735,7 +765,7 @@ Licence
     </div>
     <!-- /.container-fluid -->
     </div>
-    </div>
+    <!-- </div> -->
 
     <!-- End of Main Content -->
 

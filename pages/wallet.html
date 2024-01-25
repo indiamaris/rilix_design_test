@@ -29,7 +29,7 @@
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
-
+    <link href="../css/rilix.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top">
@@ -37,12 +37,12 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <!-- Sidebar -->
+        <!-- Sidebar On screen-->
 
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar mt-4">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion hidInPhone" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class=" mt-4 sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+            <a class=" mt-4 sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
 
                     <img src="../img/rilix-logo-white.svg" alt="rilix icon" class='rilixIcon'>
@@ -55,10 +55,10 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="../index.html">
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>My Wallet</span></a>
             </li>
 
             <!-- Divider -->
@@ -75,7 +75,7 @@
             <li class="nav-item">
 
 
-                <a class="nav-link" href="licences.html">
+                <a class="nav-link" href="../pages/licences.html">
                     <i class="fas fa-solid fa-id-card"></i>
                     <span> Licences</span></a>
 
@@ -88,48 +88,41 @@
                 <a class="nav-link" href="../pages/coasters.html">
                     <i class="fas fa-car-alt"></i>
                     <span> Coasters</span></a>
-
-
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="wallet.html">
+                <a class="nav-link" href="../pages/wallet.html">
                     <i class="fas fa-wallet"></i>
                     <span>Wallet</span></a>
-
-
             </li>
             <!-- Nav Item - Utilities Collapse Menu -->
 
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <!-- Heading -->
             <div class="sidebar-heading">
                 Invest in your business
             </div>
-
             <li class="nav-item fs-1">
-                <a class="nav-link" href="store.html">
+                <a class="nav-link" href="../pages/store.html">
                     <i class="fas fa-cart-plus fs-1"></i>
                     <span class='fs-1'>Store</span></a>
-
-
             </li>
             <!-- Nav Item - Pages Collapse Menu -->
-
-
-
             <li class="nav-item">
-                <a class="nav-link" href="news.html">
+                <a class="nav-link" href="../pages/news.html">
                     <i class="fas fa-rss"></i>
                     <span>News</span></a>
             </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="../pages/newsB.html">
+                        <i class="fas fa-rss"></i>
+                        <span>News</span></a>
+                </li> -->
 
             <!-- Nav Item - Tables -->
 
-            <!-- Divider -->
+            <!-- divider -->
             <hr class="sidebar-divider d-none d-md-block">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline md-4 ">
@@ -137,21 +130,144 @@
             </div>
 
             <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex w-75 ">
-                <img class="sidebar-card-illustration mb-3 mt- " src="../img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2 "><strong>Coins are aways on Sale</strong> The more you buy, the more
+            <div class="sidebar-card d-none d-lg-flex w-75 hidInPhone ">
+                <img class="sidebar-card-illustration mb-3 mt- " src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2 hidInPhone "><strong>Coins are aways on Sale</strong> The more you buy, the
+                    more
                     discount
                     you get! Visit our store and shop like a profit pro!</p>
-                <a class=" btn btn-success btn-sm" href="./store.html">
+                <a class=" btn btn-success btn-sm" href="../pages/sale.html">
                     Buy More, Pay Less!</a>
             </div>
 
         </ul>
         <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+        <!-- sidebar on celphone -->
 
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column justify-content-center  ">
+            <div class='forPhoneIn'>
+                <div class="bd-example ">
+                    <div class="pos-f-t  ">
+                        <!-- aqui temos o botaozinho de navbar lindissimo -->
+                        <nav class="navbar bg-primary d-flex  justify-content-between align-items-center "
+                            style='height: 50px'>
+                            <p class='text-white bg-primary'><img style='height: 35px' src="./img/rilix-logo-white.svg"
+                                    alt=""></p>
+                            <button class="navbar-toggler border-0 text-white pb-3" type="button" data-toggle="collapse"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="true" aria-label="Toggle navigation ">
+                                <i class="fas fa-solid fa-bars"></i>
+                            </button>
+                        </nav>
+
+                        <!-- aqui acaba o botaozinho -->
+                        <div class="collapse show " id="navbarToggleExternalContent">
+                            <div class="bg-primary pl-2">
+                                <ul class='navbar-nav align-items-start pl-2 table table-hover'>
+
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="../pages/licences.html">
+                                            <i class="fas fa-solid fa-id-card "></i>
+                                            <span> Dashboard</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="../pages/store.html">
+                                            <i class="fas fa-cart-plus fs-1 text-white"></i>
+                                            <span> Store</span></a>
+
+
+                                    </li>
+
+
+
+
+
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="../pages/licences.html">
+                                            <i class="fas fa-solid fa-id-card "></i>
+                                            <span> Licences</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+
+
+                                        <a class="nav-link text-white" href="../pages/coasters.html">
+                                            <i class="fas fa-car-alt 
+                                                "></i>
+                                            <span> Coasters</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="../pages/wallet.html">
+                                            <i class="fas fa-wallet"></i>
+                                            <span>Wallet</span></a>
+
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">
+                                            <i class="fas fa-solid fa-user"></i>
+                                            <span>Profile</span></a>
+
+
+                                    </li>
+
+
+
+
+                                </ul>
+                                <!-- Page Heading -->
+
+                                <!-- <span class='w-100' style='background-color: aliceblue'> </span> -->
+
+
+                                <div class="col rounded bg-transparent">
+                                    <div class="row d-flex align-items-center justify-content-between">
+
+                                        <div class=" pl-2 text-white">
+                                        </div>
+
+
+
+
+
+
+                                        <div class="nav-item dropdown no-arrow text-right text-white">
+                                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span
+                                                    class="d-none d-lg-inline   d-sm-inline  pr-2 hidInPhone text-white">Douglas
+                                                    McGee
+                                                </span>
+                                                <img class=" img-profile rounded-circle" src="../img/undraw_profile.svg"
+                                                    style='height: 35px;'>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Main Content -->
             <div id="content">
 
@@ -161,58 +277,47 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <div class='row justify-content-between  m-2 hidInPhone'>
+                        <div>
+                            <p class='gray mt-2'>DanshBoard</p>
+                        </div>
 
-                    <!-- Page Heading -->
-                    <!-- Page Heading -->
+                        <div class="row d-flex justify-content-end">
+                            <div class="nav-item dropdown no-arrow text-right text-white">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
+                                        McGee
+                                    </span>
 
-                    <div class="col shadow mt-2 mb-4 m-1 rounded">
+                                </a>
 
-                        <div class="row ">
-                            <div class=" col-md-9 col-md-3 col-sm-12  ">
-                                <p class='h3 mb-0 text-gray-800 pt-3 '>My Rilix Wallet</p>
-                            </div>
-
-
-
-                            <div class="col   col-lg-3 col-md-3 pr-1  col-sm-12  ">
-                                <div class="nav-item dropdown no-arrow text-right">
-                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="d-none d-lg-inline  d-sm-inline text-gray-800 pr-2 ">Douglas McGee
-                                        </span>
-                                        <img class=" img-profile rounded-circle" src="../img/undraw_profile.svg"
-                                            style='height: 45px;'>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
                                     </a>
-                                    <!-- Dropdown - User Information -->
-                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                        aria-labelledby="userDropdown">
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Profile
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Settings
-                                        </a>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Activity Log
-                                        </a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#" data-toggle="modal"
-                                            data-target="#logoutModal">
-                                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
-                                            Logout
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
+
+                                    <div class="dropdown-divider "></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
+                                        Logout
+                                    </a>
+                                </div>
+
+                            </div>
+                            <img class=" img-profile rounded-circle mr-3" src="../img/undraw_profile.svg"
+                                style='height: 35px;'>
                         </div>
                     </div>
-                    <div class="row">
+
+
+                    <div class="row mt-4">
                         <div class="col-xl-6 col-lg-6 col-sm-12  mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card border-left-primary shadow py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col  mr-2">
@@ -222,19 +327,14 @@
 
                                                 Tickets Balance Details
                                             </div>
-                                            <span> Total Balance</span>
-                                            <div class="h2 m-4 font-weight-bold text-xl text-success">$40,000</div>
+                                            <span> Total Tickets on Account</span>
+                                            <div class="h2 m-4 font-weight-bold text-xl text-success">1000</div>
                                         </div>
 
 
                                     </div>
                                     <div class=' row'>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="balance-stats ">
-                                                <p>Profit Last Month</p>
-                                                <h3>$42,678</h3>
-                                            </div>
-                                        </div>
+
 
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                             <div class="balance-stats">
@@ -242,42 +342,15 @@
                                                 <h3>$12,678</h3>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class=' row mt-4'>
-                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                            <div class="balance-stats">
-                                                <p>All discount Obtained Last Month</p>
-                                                <h3>$42,678</h3>
-                                            </div>
-                                        </div>
 
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                                             <div class="balance-stats ">
-                                                <p>All discount Accumulated in 2024</p>
-                                                <h3>$129,678</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 mt-5 col-lg-12 col-md-12 border-1 ">
-                                            <div class="text-center ">
-
-                                                <button type="button" class=" mt-4 btn btn-lg btn-primary">
-                                                    <a class='text-white' href="./store.html"> Buy Tickets
-                                                    </a></button>
-
-                                                </button>
-
-                                                <!-- <h3>$129,678</h3> -->
-                                                <!-- <h3>or maybe some message???</h3> -->
-                                            </div>
-                                            <div class="text-center col-md-12 ">
-                                                <div>
-                                                    <button type="button" class=" mt-4 btn btn-lg btn-success">
-                                                        <a class='text-white' href="./store.html"> Buy Coaster
-                                                        </a>
-                                                </div>
+                                                <p>Profit Last Month</p>
+                                                <h3>$42,678</h3>
                                             </div>
                                         </div>
                                     </div>
+
 
                                 </div>
 
@@ -286,9 +359,9 @@
                         </div>
 
                         <!-- cTickets Record in January 202 -->
-                        <div class=" col-lg-6 col-md-12 mb-4 ">
+                        <div class=" col-lg-6 col-md-12 mb-4">
 
-                            <div class="card border-left-success shadow h-100 py-2">
+                            <div class="card border-left-success shadow py-2 ">
 
 
 
@@ -299,44 +372,14 @@
                                         Tickets Record in January 2024 &nbsp;</h6>
 
 
-                                        <span class="dropdown no-arrow text-right">
-                                            <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fas fa-calendar-alt "></i>
 
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                                aria-labelledby="dropdownMenuLink">
-                                                <div class="dropdown-header">Dropdown Header:</div>
+                                        <i class="text-primary fas fa-calendar-alt "></i>
 
 
-                                                <div>
-                                                    <div class='datapicker'>
-                                                        <div class="container fs-2">
-                                                            Start Date: <input id="startDate" width="150" />
-                                                            End Date: <input id="endDate" width="150" />
-                                                        </div>
-                                                        <script>
-                                                            var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-                                                            $('#startDate').datepicker({
-                                                                uiLibrary: 'bootstrap4',
-                                                                iconsLibrary: 'fontawesome',
-                                                                minDate: today,
-                                                                maxDate: function () {
-                                                                    return $('#endDate').val();
-                                                                }
-                                                            });
-                                                            $('#endDate').datepicker({
-                                                                uiLibrary: 'bootstrap4',
-                                                                iconsLibrary: 'fontawesome',
-                                                                minDate: function () {
-                                                                    return $('#startDate').val();
-                                                                }
-                                                            });
-                                                        </script>
-                                                    </div>
-                                                </div>
-                                        </span>
+
+
+
+
                                     </div>
                                 </div>
 
@@ -344,18 +387,10 @@
 
                                 <div class="row no-gutters align-items-center">
 
-                                    <div class="col  col-md-12 mr-2">
-
-
-
-                                        <!-- ticket reconds -->
-                                        <!-- <div class="h5 mb-0 font-weight-bold text-gray-800">Total 190 rides </div> -->
-
-
+                                    <div class="col  col-md-12 mr-2 mb-3">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered" id="dataTable" width="100%"
-                                                cellspacing="0">
+                                            <table class="table table-bordered" id="dataTable" cellspacing="0">
 
                                                 <thead>
                                                     <tr>
@@ -369,30 +404,11 @@
                                                         <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
                                                                     Consumptions comething
                                                                 </th> -->
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
+
                                                     </tr>
                                                 </thead>
 
-                                                <tfoot>
-                                                    <tr>
 
-                                                        <th><i class="fas fa-sort-amount-down-alt"></i> Date of
-                                                            Purcharge
-                                                        </th>
-                                                        <th><i class="fas 
-                                                                                                                                <th> <i class="
-                                                                fas fa-sort-amount-down-alt"></i> Amount
-                                                            Total Total
-                                                        </th>
-                                                        <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
-                                                                    Consumptions comething
-                                                                </th> -->
-
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                </tfoot>
                                                 <tbody>
                                                     <tr>
 
@@ -400,87 +416,22 @@
 
                                                         <td>$320,800</td>
 
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
 
-
-
-                                                        <td>2011/07/25</td>
-
-                                                        <td>$320,800</td>
-
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-
-                                                        <td>2009/01/12 </td>
-                                                        <td>$86,000</td>
-
-
-
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-
-
-
-                                                        <td>2012/03/29</td>
-
-                                                        <td>$433,060</td>
-
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-
-
-
-                                                        <td>2008/11/28</td>
-                                                        <td>$162,700</td>
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-
-
-                                                        <td>2012/12/02</td>
-                                                        <td>$372,000</td>
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2010/10/14</td>
-                                                        <td>$327,900</td>
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2009/09/15</td>
-                                                        <td>$205,500</td>
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
                                                     </tr>
 
 
-
                                                     <tr>
-
-                                                        <td>2008/11/13</td>
+                                                        <td>2011/06/27 </td>
                                                         <td>$183,000</td>
 
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
                                                     </tr>
                                                     <tr>
                                                         <td>2011/06/27 </td>
                                                         <td>$183,000</td>
-                                                        <td>$20,800</td>
-                                                        <td>$10,800</td>
+
                                                     </tr>
+
+
 
                                                 </tbody>
                                             </table>
@@ -492,8 +443,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-12 col-md-12 mb-4">
+                <div class="row mr-3 ml-3">
+                    <div class="col-xl-12 col-md-12 mb-4 ">
                         <div class="card border-left-primary shadow h-100 py-2">
                             <div class="card-body">
                                 <div class="row no-gutters align-items-center">
@@ -554,15 +505,16 @@
                                                     cellspacing="0">
                                                     <thead>
                                                         <tr>
-                                                            <th><i class="fas fa-sort-alpha-down-alt"></i> License
-                                                                label- Description</th>
-                                                            <th><i class="fas fa-sort-amount-up-alt"></i> License
-                                                                key</th>
-                                                            <th><i class="fas fa-sort-amount-down-alt"></i> Date
-                                                            </th>
+                                                            <th><i class="fas fa-sort-alpha-down-alt"></i> Date</th>
                                                             <th><i class="fas fa-sort-amount-down-alt"></i>
                                                                 Submitted
                                                             </th>
+                                                            <th><i class="fas fa-sort-amount-up-alt"></i> License
+                                                                key</th>
+
+                                                            <th><i class="fas fa-sort-amount-down-alt"> Description</i>
+                                                            </th>
+
                                                             <th> <i class="fas fa-sort-amount-down-alt"></i> Price
                                                             </th>
                                                             <th> <i class="fas fa-sort-amount-down-alt"></i> Credits
@@ -577,7 +529,7 @@
                                                         </tr>
                                                     </thead>
 
-                                                    <tfoot>
+                                                    <!-- <tfoot>
                                                         <tr>
                                                             <th><i class="fas fa-sort-alpha-down-alt"></i> License
                                                                 label- Description</th>
@@ -600,164 +552,120 @@
                                                             </th>
 
                                                         </tr>
-                                                    </tfoot>
+                                                    </tfoot> -->
                                                     <tbody>
                                                         <tr>
-                                                            <td>
-                                                                Tiger
-                                                                Nixon
-                                                            </td>
-                                                            <td>61</td>
                                                             <td>2023-10-24</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$320,800</td>
-
-                                                            <td>$10,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
-
-
-
-                                                        <tr>
+                                                            <td>2023-10-24</td>
                                                             <td>
-                                                                Cedric
-                                                                Kelly
+                                                                ....444444
                                                             </td>
-
-                                                            <td>22</td>
-                                                            <td>2012/03/29</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
+                                                            <td>some here th</td>
 
 
-
-                                                        <tr>
-                                                            <td>
-                                                                Rhona
-                                                                Davidson</td>
-                                                            <td>55</td>
-                                                            <td>2010/10/14</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$327,900</td>
                                                             <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
                                                         </tr>
                                                         <tr>
+                                                            <td>2023-10-24</td>
+                                                            <td>2023-10-24</td>
                                                             <td>
-                                                                Colleen
-                                                                Hurst
+                                                                ....444444
                                                             </td>
-                                                            <td>39</td>
-                                                            <td>2009/09/15</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$205,500</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                Sonya
-                                                                Frost
-                                                            </td>
-                                                            <td>23</td>
-                                                            <td>2008/12/13</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$103,600</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td>
-                                                                Quinn
-                                                                Flynn
-                                                            </td>
-                                                            <td>22</td>
-                                                            <td>2013/03/03</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$342,000</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                Charde
-                                                                Marshall</td>
-                                                            <td>36</td>
-                                                            <td>2008/10/16</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$470,600</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                Haley
-                                                                Kennedy
-                                                            </td>
-                                                            <td>43</td>
-                                                            <td>2012/12/18</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$313,500</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
+                                                            <td>some here th</td>
 
 
-                                                        <tr>
-                                                            <td>
-                                                                Gavin
-                                                                Cortez
-                                                            </td>
-                                                            <td>22</td>
-                                                            <td>2008/10/26</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$235,500</td>
                                                             <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2023-10-24</td>
+                                                            <td>2023-10-24</td>
+                                                            <td>
+                                                                ....444444
+                                                            </td>
+                                                            <td>some here th</td>
+
+
+                                                            <td>$320,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2023-10-24</td>
+                                                            <td>2023-10-24</td>
+                                                            <td>
+                                                                ....444444
+                                                            </td>
+                                                            <td>some here th</td>
+
+
+                                                            <td>$320,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2023-10-24</td>
+                                                            <td>2023-10-24</td>
+                                                            <td>
+                                                                ....444444
+                                                            </td>
+                                                            <td>some here th</td>
+
+
+                                                            <td>$320,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2023-10-24</td>
+                                                            <td>2023-10-24</td>
+                                                            <td>
+                                                                ....444444
+                                                            </td>
+                                                            <td>some here th</td>
+
+
+                                                            <td>$320,800</td>
+
+                                                            <td>10,800</td>
+                                                            <td>800</td>
+                                                            <td>$100</td>
                                                         </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                Olivia
-                                                                Liang
-                                                            </td>
-                                                            <td>64</td>
-                                                            <td>2011/02/03</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$234,500</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
 
-                                                        <tr>
-                                                            <td>
-                                                                Donna
-                                                                Snider
-                                                            </td>
-                                                            <td>27</td>
-                                                            <td>2011/01/25</td>
-                                                            <td>2023-10-24T20:12:26.498Z</td>
-                                                            <td>$112,000</td>
-                                                            <td>$320,800</td>
-                                                            <td>$20,800</td>
-                                                            <td>$10,800</td>
-                                                        </tr>
+
+
+
                                                     </tbody>
                                                 </table>
+                                                <div class="d-flex justify-content-between">
+
+                                                    <div class="dataA">
+                                                        <table>
+                                                            <tr> Total credits add: <strong>10</strong></tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="dataB">
+                                                        <table>
+
+                                                            <tr> Total Customers: <strong>234</strong></tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -767,11 +675,16 @@
                     </div>
                 </div>
             </div>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span> &copy;Rilix 2024</span>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-    </div>
 
-    </div>
 
 </body>
 

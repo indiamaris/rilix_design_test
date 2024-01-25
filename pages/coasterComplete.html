@@ -131,7 +131,7 @@
             <hr class="sidebar-divider d-none d-md-block">
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline md-4 ">
-                <button class="rounded-circle border-1" id="sidebarToggle"></button>
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
             <!-- Sidebar Message -->
@@ -226,86 +226,131 @@
 
                     </div>
 
-                    <div class='pr-4 pl-4'>
-                        <div class='table-container pr-4 pl-4'>
-                        <div class="table-responsive mr-4 ml-4">
-                            <table class="table border-1" id="dataTable" width="100%" cellspacing="0">
+
+                    <div>
+                        <div class="table-responsive border-0">
+                            <table class="table border-0" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th class=' border-1'>
-                            </th>
-                            <th class='border-1'>Coaster label </th>
-                            <th class='border-1'></i> Key</th>
-                            <th class='border-1'></i> Status</th>
-                            <th class='border-1'></i> </th>
+                                        <th class='border-0'></th>
+                                        <th class='border-0'>Coaster label </th>
+                                        <th class='border-0'></i> Key</th>
+                                        <th class='border-0'></i> Status</th>
+                                        <th class='border-0'></i> btn action</th>
+                                        <!-- <th><i class="fas fa-sort-amount-up-alt"></i> Coaster key</th> -->
+                                        <!-- <th class='border-0'> Glass
+                                        </th> -->
+                                        <!-- <th class='border-0'> Glass Batery
+                                        </th>
+                                        <th class='border-0'> Payment
+                                        </th> -->
+
+                                    </tr>
+                                </thead>
+
+                                <tfoot>
+                                    <tr>
+                                        <th></th>
+                                        <th> <i class="fas fa-sort-alpha-up"></i> Coaster Name </th>
+                                        <th><i class="fas fa-sort-alpha-down-alt"></i> Coaster Location</th>
+                                        <!-- <th><i class="fas fa-sort-amount-up-alt"></i> Coaster key</th> -->
+                                        <th> Glass
+                                            <!-- </th>
+                                        <th> Glass Batery
+                                        </th>
+                                        <th> Payment
+                                        </th> -->
+
+                                    </tr>
+                                </tfoot>
+                                <tbody class='border-0'>
+                                    <tr class='text-success'>
+                                        <td><i class="fas fa-car"></i> </td>
+                                        <td> Coaster Blue
+                                        </td>
+                                        <td>Edinburgh</td>
+                                        <td><i class="fas fa-circle text-success fa-xs mr-2"></i> online</td>
+                                        <td><i class="fas fa-battery-full text-success"></i> 100%</td>
+                                        <td><i class="fas fa-battery-full text-success"></i> 100%</td>
+
+                                    </tr>
+
+                                    <tr class='border-0'>
+                                        <td class='border-0' class='text-danger'><i class="fas fa-car"></i> </td>
+                                        <td class='border-0'> </i> Aline Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-danger"></i>
+                                            offline</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-danger"></i>
+                                            offline</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-success"></i> 100%</td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class='border-0'><i class="fas fa-car text-warning"></i> </td>
+                                        <td class='border-0'> </i> Raiane Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
+                                            online</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-warning"></i> 50%</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-danger"></i> 40%</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class='border-0'><i class="fas fa-car text-warning"></i> </td>
+                                        <td class='border-0'> </i> Raiane Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
+                                            online</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-warning"></i> 50%</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-danger"></i> 40%</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class='border-0'><i class="fas fa-car text-warning"></i> </td>
+                                        <td class='border-0'> </i> Raiane Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
+                                            online</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-warning"></i> 50%</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-danger"></i> 40%</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class='border-0'><i class="fas fa-car text-warning"></i> </td>
+                                        <td class='border-0'> </i> Raiane Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
+                                            online</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-warning"></i> 50%</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-danger"></i> 40%</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class='border-0'><i class="fas fa-car text-warning"></i> </td>
+                                        <td class='border-0'> </i> Raiane Morares</td>
+
+                                        <td class='border-0'>Tokyo</td>
+                                        <td class='border-0'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
+                                            online</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-warning"></i> 50%</td>
+                                        <td class='border-0'><i class="fas fa-battery-full text-danger"></i> 40%</td>
+
+                                    </tr>
 
 
-                            </tr>
-                            </thead>
-
-                            <tfoot>
-                                <tr>
-                                    <th></th>
-                                    <th> <i class="fas fa-sort-alpha-up"></i> Coaster Name </th>
-                                    <th><i class="fas fa-sort-alpha-down-alt"></i> key</th>
-
-                                    <th> Status
-
-
-                                </tr>
-                            </tfoot>
-                            <tbody class='border-1'>
-
-
-                                <tr class='border-1'>
-                                    <td class='border-1' class='text-danger'><i class="fas fa-car"></i>
-                                        </i> Aline Morares</td>
-
-                                    <td class='border-1'>Tokyo</td>
-                                    <td class='border-1'>...684387</td>
-                                    <td class='border-1'><i class="fas fa-circle  fa-xs mr-2 text-danger"></i>
-                                        offline</td>
-                                    <td class='border-1'><a class="btn changeOnPhone btn-primary  "
-                                            href="./licence.html" role="button">
-                                            View </a></td>
-
-                                </tr>
-
-                                <tr>
-                                    <td class='border-1'><i class="fas fa-car text-warning"></i>  </i> Lola Morares</td>
-
-                                    <td class='border-1'>Tokyo</td>
-                                                                        <td class='border-1'>...684387</td>
-                                    <td class='border-1'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
-                                        online </td>
-                                    <td class='border-1'>
-                                        <div class="btn btn-primary border-1  " href="./licence.html" role="button">
-                                            View </div>
-                                    </td>
-
-                                </tr>
-
-
-                                <tr>
-                                    <td class='border-1'><i class="fas fa-car text-warning"></i>  </i> Raiane Morares</td>
-<td class='border-1'>...684387</td>
-                                    <td class='border-1'>Tokyo</td>
-                                    <td class='border-1'><i class="fas fa-circle  fa-xs mr-2 text-success"></i>
-                                        online</td>
-                                    <td class='border-1'><a class="btn changeOnPhone btn-primary  "
-                                            href="./licence.html" role="button">
-                                            View </a></td>
-
-                                </tr>
-
-                            </tbody>
+                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-
-    </div>
-    </div>
     </div>
