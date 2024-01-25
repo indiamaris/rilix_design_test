@@ -1,5 +1,10 @@
 .rilixIcon{width: 60px;transform: rotate(15deg);}
 
+.banner{
+  background-position: center;
+  background-image: url('../img/rilix/ntFmJUZ8tw3ULD3tkBaAtf-1200-80.jpg');
+}
+
 .blink {
   animation: blink 1s steps(1, end) infinite;
 }
