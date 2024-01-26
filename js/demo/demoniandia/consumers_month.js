@@ -43,17 +43,18 @@ var data  = [
     {
         month: '10', nested:
             { count: 145, countB: 200, countD: 270, countE: 900, countF: 600, countG: 400, countH: 200, countI: 800, countJ: 290, countK: 200, countL: 900 }
-    },
+  },
+    
     {
         month: '11', nested:
             { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-  },
+  }
     ,
     {
         month: '12', nested:
             { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
     }
-    ,
+  ,
     {
         month: '13', nested:
             { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
@@ -147,7 +148,11 @@ var data  = [
     {
         month: '31', nested:
             { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
+    },
+    
+    
+    
+    
 ]
   
 //fim fake data
@@ -290,9 +295,9 @@ var consumers = new Chart(ctx,   {
     maintainAspectRatio: false,
     layout: {
       padding: {
-        left: 10,
-        right: 25,
-        top: 25,
+        left: 0,
+        right: 0,
+        top: 0,
         bottom: 0
       }
     },
@@ -306,13 +311,13 @@ var consumers = new Chart(ctx,   {
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 10
+          maxTicksLimit: 31
         }
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 10,
-          padding: 10,
+          maxTicksLimit: 31,
+          padding: 0,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
             return '$' + number_format(value);
