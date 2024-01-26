@@ -27,21 +27,22 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
-var numbersArray = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
+var numbersArray = Array.from({ length: 5 }, (_, index) => (index + 1).toString());
 
 // Bar Chart Example
-var ctx = document.getElementById("consumers_month");
+var ctx = document.getElementById("consumers_month_week");
 var myBarChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'line',
   data: {
-    labels:numbersArray,
+    labels: numbersArray,
     datasets: [{
       label: "Revenue",
       backgroundColor: "green",
       hoverBackgroundColor: "green", 
       borderColor: "green",
    
-      data: [ 5312, 6251, 7841, 9821, 14984 ,  9821, 14984 ,  6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
+      data: [ 5312, 6251, 7841, 9821, 2000
+      ]
     }],
   },
   options: {
