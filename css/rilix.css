@@ -185,10 +185,18 @@ padding-top: 2%;
     .ticketOnScreen{
     padding:0;
   
-    padding-left: 2px;
+    padding-left: 0px;
 
 
   }
+    .ticketOnPhone{
+
+  
+    padding-left: 10px;
+
+
+  }
+
 
 
 
