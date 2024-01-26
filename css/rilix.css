@@ -177,6 +177,19 @@ padding-top: 2%;
     height: 18px
   }
 
+  .graphOnScreen{
+    padding:0;
+
+  }
+
+    .ticketOnScreen{
+    padding:0;
+    padding-left: 10px
+
+  }
+
+
+
 
 };
 

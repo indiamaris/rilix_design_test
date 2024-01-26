@@ -221,7 +221,7 @@
 
                                     </li>
                                     <li class="nav-item">
-                                <a class="nav-link text-white"href="./pages/news.html">
+                                        <a class="nav-link text-white" href="./pages/news.html">
                                             <i class="fas fa-rss"></i>
                                             <span>Rilix News</span></a>
 
@@ -284,10 +284,15 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
+
+
+
+
+
                 <div class="container-fluid">
                     <div class='row justify-content-between  m-2 hidInPhone'>
                         <div>
-                            <p class='gray mt-2'>DanshBoard</p>
+                            <p class='gray mt-2 hidInPhone'>DanshBoard</p>
                         </div>
 
                         <div class="row d-flex justify-content-end">
@@ -324,14 +329,14 @@
 
 
                     <!-- Content Row -->
-                    <div class="row">
+                    <div class="row ticketOnScreen">
 
 
 
                         <!-- Customers in my pretty Card Example -->
-                        <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12 mb-4 mt-2">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
+                        <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12 mb-4 mt-2 ">
+                            <div class="card border-left-info shadow h-100 py-2 ticketOnScreen">
+                                <div class="card-body ticketOnScreen">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
@@ -357,11 +362,12 @@
 
                         <!-- customer Card Example -->
                         <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12 mb-4 mt-2">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            <div class="card border-left-info shadow h-100 py-2 ">
+                                <div class="card-body  ticketOnScreen">
+                                    <div class="row no-gutters align-items-center ticketOnScreen">
+                                        <div class="col mr-2 ticketOnScreen">
+                                            <div
+                                                class="text-xs font-weight-bold text-info text-uppercase mb-1 ticketOnScreen">
                                                 Total 86 Consumers January 2024</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">Total 90 rides </div>
                                         </div>
@@ -375,12 +381,13 @@
 
 
                         <!-- My tickets Card Example -->
-                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4 mt-2">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mb-4 mt-2 ">
                             <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
+                                <div class="card-body ticketOnScreen">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                            <div
+                                                class="text-xs font-weight-bold text-info text-uppercase mb-1 graphOnScreen">
                                                 My Tickets</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                         </div>
@@ -446,9 +453,9 @@
                                     </div>
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body" style='height: 500px' ;>
-                                    <div class="h-100">
-                                        <canvas id="myAreaChart"></canvas>
+                                <div class="card-body graphOnScreen" style='height: 500px' ;>
+                                    <div class="h-100 graphOnScreen">
+                                        <canvas id="myAreaChart" class='graphOnScreen'></canvas>
                                     </div>
                                 </div>
                             </div>

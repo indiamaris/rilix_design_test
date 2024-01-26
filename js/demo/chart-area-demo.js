@@ -53,9 +53,9 @@ var myLineChart = new Chart(ctx, {
     maintainAspectRatio: false,
     layout: {
       padding: {
-        left: 10,
-        right: 25,
-        top: 25,
+        left: 0,
+        right: 0,
+        top: 0,
         bottom: 0
       }
     },
@@ -75,7 +75,7 @@ var myLineChart = new Chart(ctx, {
       yAxes: [{
         ticks: {
           maxTicksLimit: 10,
-          padding: 10,
+          padding: 0,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
             return '$' + number_format(value);
@@ -96,17 +96,17 @@ var myLineChart = new Chart(ctx, {
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
       bodyFontColor: "#858796",
-      titleMarginBottom: 10,
+      titleMarginBottom: 5,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
       borderColor: '#dddfeb',
       borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
+      xPadding: 0,
+      yPadding: 0,
       displayColors: false,
       intersect: false,
       mode: 'index',
-      caretPadding: 12,
+      caretPadding: 2,
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
