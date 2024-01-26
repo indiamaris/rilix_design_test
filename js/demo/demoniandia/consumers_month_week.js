@@ -32,14 +32,14 @@ var numbersArray = Array.from({ length: 5 }, (_, index) => (index + 1).toString(
 // Bar Chart Example
 var ctx = document.getElementById("consumers_month_week");
 var myBarChart = new Chart(ctx, {
-  type: 'line',
+  type: 'bar',
   data: {
     labels: numbersArray,
     datasets: [{
       label: "Revenue",
-backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#4e73df",
-      borderColor: "#6495ed",
+backgroundColor: "#16c2f7" ,
+      hoverBackgroundColor: "#16c2f7",
+      borderColor: "#16c2f7",
    
       data: [ 5312, 6251, 7841, 9821, 2000
       ]
@@ -65,9 +65,9 @@ backgroundColor: "#4e73df",
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit:126
+          maxTicksLimit:50
         },
-        maxBarThickness: 31,
+        maxBarThickness: 300,
       }],
       yAxes: [{
         ticks: {

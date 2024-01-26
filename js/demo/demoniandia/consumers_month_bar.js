@@ -37,11 +37,13 @@ var myBarChart = new Chart(ctx, {
     labels:numbersArray,
     datasets: [{
       label: "Revenue",
-     backgroundColor: "#16c2f7",
+     backgroundColor: "#4e73df",
       hoverBackgroundColor: "black",
-      borderColor: "#6495ed",
+      borderColor: "#4e73df",
+      tension: 0,
+      fill:false,
    
-      data: [ 5312, 6251, 7841, 9821, 14984 ,  9821, 14984 ,  6251, 7841, 9821, 14984 , 5312, 6251, 100, 9821, 14984 , 5312, 6251, 701, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
+      data: [ 5300, 6251, 7841, 982, 10900 ,  9821, 14984 ,  6251, 7841, 9821, 1498 , 5312, 6251, 100, 9821, 14984 , 5312, 6251, 701, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
     }],
   },
   options: {
@@ -50,7 +52,7 @@ var myBarChart = new Chart(ctx, {
       padding: {
         left: 0,
         right: 0,
-        top: 10,
+        top: 30,
         bottom: 0
       }
     },

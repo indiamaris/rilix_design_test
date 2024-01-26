@@ -40,6 +40,7 @@ var myBarChart = new Chart(ctx, {
       backgroundColor: "green",
       hoverBackgroundColor: "green", 
       borderColor: "green",
+    
    
       data: [ 5312, 6251, 7841, 9821, 14984 ,  9821, 14984 ,  6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
     }],

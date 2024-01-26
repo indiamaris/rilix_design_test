@@ -35,16 +35,21 @@ var myBarChart = new Chart(ctx, {
     labels: ["Monday", "Thuesday", "Wednesday", "Thurday", "Viernes", "Saturday", "Sunday"],
     datasets: [{
       label: "Current Week",
-    backgroundColor: "#00ffa7",
+    backgroundColor: "",
       hoverBackgroundColor: "#green",
-      borderColor: "green",
-      data: [4215, 5312, 6251, 7841, 9821, 10984,  149],
+      borderColor: "#f8a800",
+      data: [ 4215, 5312, 6251, 7841, 9821, 10984, 149 ],
+      fill: 'false',
+            tension:0
     }, {
       label: "Last Week",
-      backgroundColor: "yellow",
+      backgroundColor: "",
       hoverBackgroundColor: "pink",
-      borderColor: "orange",
-      data: [6215, 6312, 9251, 4841,2821, 14984,  849],
+      borderColor: "#d6d6d6",
+      data: [ 6215, 6312, 9251, 4841, 2821, 14984, 849 ],
+      fill: 'false',
+      tension:0
+      
     }],
   },
   options: {
