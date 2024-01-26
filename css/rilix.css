@@ -148,6 +148,10 @@ padding-top: 10%;
     height: 0px
   }
 
+  .noMarginOnPhone{
+    margin: 0;
+  }
+
 
 }
 
