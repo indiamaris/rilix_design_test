@@ -294,23 +294,22 @@
                     <div class='row justify-content-between  m-2 hidInPhone '>
                         <div>
 
-                            <p class='gray mt-2'> 
-                                    <a href="../pages/licences.html">
+                            <p class='gray mt-2'>
+                                <a href="../pages/licences.html">
                                     <i class="fa fa-chevron-circle-left text-primary" aria-hidden="true"></i>
-                                      </a>
+                                </a>
 
-                                    
-                                    My Licence: 748395787
+
+                                My Licence: 748395787
                                 <!-- <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> -->
                             </p>
                         </div>
 
-                        <div class="row d-flex justify-content-end hidInPhone">
+                        <div class="row d-flex justify-content-end">
                             <div class="nav-item dropdown no-arrow text-right text-white">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span
-                                        class=" d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
+                                    <span class=" d-none d-lg-inline  d-sm-inline  pr-2  text-gray-800">Douglas
                                         McGee
                                     </span>
 
@@ -354,234 +353,292 @@
 
 
 
-                        <div class="card shadow  card-body mb-4  col-lg-12 card d-flex hidInPhone">
+                        ">
 
 
-                            <div class="card-body  align-items-center d-flex flex-row justify-content-between">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-xl-12 col-lg-10 col-md-6 col-auto">
+                        <div class="card-body  align-items-center d-flex flex-row justify-content-between">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-12 col-lg-10 col-md-6 col-auto">
 
-                                        <div class=" text-xl font-weight-bold text-dark text-uppercase mb-4">
-
-
-                                            Licence: Laurentina (here we put the NAME of the licence)
-                                        </div>
-                                        <span> <strong>Key:</strong> 66786786557674645342311</span>
-                                        <br>
-                                        <span> <strong>Location:</strong> BLumenau</span>
-                                        <br>
-                                        <span> <strong>Obs:</strong> Licence on the book club.</span>
+                                    <div class=" text-xl font-weight-bold text-dark text-uppercase mb-4">
 
 
-
-
-
+                                        Licence: Laurentina (here we put the NAME of the licence)
                                     </div>
-                                </div>
+                                    <span> <strong>Key:</strong> 66786786557674645342311</span>
+                                    <br>
+                                    <span> <strong>Location:</strong> BLumenau</span>
+                                    <br>
+                                    <span> <strong>Obs:</strong> Licence on the book club.</span>
 
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card shadow  card-body mb-4  col-lg-12 card d-flex flex-row">
+
+                        <!-- week card -->
+
+                        <div class="card shadow   card-body mb-1 card col-xl-6   col-lg-12 col-md-12">
+                            <div class="" style='height: 499px' ;>
+                                <h6 class="m-0 font-weight-bold text-primary">Consumptions week comparison</h6>
+                                <div class="h-100">
+                                    <canvas h-100 id="consumers_comparative"></canvas>
+                                </div>
                             </div>
                         </div>
-                        <div class="card shadow  card-body mb-4  col-lg-12 card d-flex flex-row">
-
-                            <!-- week card -->
-
-                            <div class="card shadow   card-body mb-1 card col-xl-6 col-lg-12 col-md-12">
-                                <div class="" style='height: 499px' ;>
-                                    <h6 class="m-0 font-weight-bold text-primary">Consumptions week comparison</h6>
-                                    <div class="h-100">
-                                        <canvas h-100 id="consumers_comparative"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- licene table -->
-                            <div class="card shadow    card-body mb-1 card m-1 overflow-hidden  col-xl-6 col-lg-12" '>
+                        <!-- licene table -->
+                        <div class="card shadow    card-body mb-1 card m-1 overflow-auto  col-xl-6 col-lg-12 overflow-auto" '>
                                                     <div class="" style=' height: 499px' ;>
-                                <h6 class="m-0 font-weight-bold text-primary">Licence Info</h6>
-                                <div class="h-25">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="103%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th><i class="fas fa-sort-alpha-down-alt"></i>
-                                                        Consumed at</th>
-                                                    <th><i class="fas fa-sort-amount-up-alt"></i> Synced
-                                                        at</th>
-                                                    <th><i class="fas fa-sort-amount-down-alt"></i>
-                                                        Conclusion
-                                                    </th>
+                            <h6 class="m-0 font-weight-bold text-primary">Licence Info</h6>
+                            <div class="h-25">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="103%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th><i class="fas fa-sort-alpha-down-alt"></i>
+                                                    Consumed at</th>
+                                                <th><i class="fas fa-sort-amount-up-alt"></i> Synced
+                                                    at</th>
+                                                <th><i class="fas fa-sort-amount-down-alt"></i>
+                                                    Conclusion
+                                                </th>
 
-                                                    <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
+                                                <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
                                                             Customers
                                                         </th> -->
-                                                    <th> <i class="fas fa-sort-amount-down-alt"></i>
-                                                        Scenarios
-                                                    </th>
+                                                <th> <i class="fas fa-sort-amount-down-alt"></i>
+                                                    Scenarios
+                                                </th>
 
 
-                                                </tr>
-                                            </thead>
+                                            </tr>
+                                        </thead>
 
-                                            <tfoot>
-                                                <tr>
-                                                    <th><i class="fas fa-sort-alpha-down-alt"></i>
-                                                        Consumed at</th>
-                                                    <th><i class="fas fa-sort-amount-up-alt"></i> Synced
-                                                        at</th>
-                                                    <th><i class="fas fa-sort-amount-down-alt"></i>
-                                                        Conclusion
-                                                    </th>
-                                                    <!-- <th><i class="fas fa-sort-amount-down-alt"></i>
+                                        <tfoot>
+                                            <tr>
+                                                <th><i class="fas fa-sort-alpha-down-alt"></i>
+                                                    Consumed at</th>
+                                                <th><i class="fas fa-sort-amount-up-alt"></i> Synced
+                                                    at</th>
+                                                <th><i class="fas fa-sort-amount-down-alt"></i>
+                                                    Conclusion
+                                                </th>
+                                                <!-- <th><i class="fas fa-sort-amount-down-alt"></i>
                                                             Duration in seconds
                                                         </th> -->
-                                                    <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
+                                                <!-- <th> <i class="fas fa-sort-amount-down-alt"></i>
                                                             Customers
                                                         </th> -->
-                                                    <th> <i class="fas fa-sort-amount-down-alt"></i>
-                                                        Scenarios
-                                                    </th>
+                                                <th> <i class="fas fa-sort-amount-down-alt"></i>
+                                                    Scenarios
+                                                </th>
 
 
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-
-
-
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
 
 
 
 
+                                            <tr>
+                                                <td>2012/03/29</td>
 
-                                                <tr>
-                                                    <td>2012/03/29</td>
+                                                <td>2012/03/29</td>
 
-                                                    <td>2012/03/29</td>
-
-                                                    <td>30%</td>
-                                                    <td>The Chihuahua</td>
-                                                    <!-- <td>5</td> -->
-
-
-                                                </tr>
-                                                <tr>
-                                                    <td>2012/03/29</td>
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
 
 
-                                                    <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
 
-                                                    <td>30%</td>
-                                                    <td>The Chihuahua</td>
-                                                    <!-- <td>5</td> -->
+                                                <td>2012/03/29</td>
 
-
-                                                </tr>
-                                                <tr>
-                                                    <td>2012/03/29</td>
-
-
-                                                    <td>2012/03/29</td>
-
-                                                    <td>30%</td>
-                                                    <td>The Chihuahua</td>
-                                                    <!-- <td>5</td> -->
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
 
 
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
 
 
-                                                    <td>2012/03/29</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
 
-                                                    <td>30%</td>
-                                                    <td>The Chihuahua</td>
-                                                    <!-- <td>5</td> -->
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
 
 
-                                                </tr>
-                                                    <td>2012/03/29</td>
-                                                    
-                                                    
-                                                    <td>2012/03/29</td>
-                                                    
-                                                    <td>30%</td>
-                                                    <td>The Chihuahua</td>
-                                                    <!-- <td>5</td> -->
-                                                    
-                                                    
-                                                    </tr>
-                                                        <td>2012/03/29</td>
-                                                        
-                                                        
-                                                        <td>2012/03/29</td>
-                                                        
-                                                        <td>30%</td>
-                                                        <td>The Chihuahua</td>
-                                                        <!-- <td>5</td> -->
-                                                        
-                                                        
-                                                        </tr>
-                                                            <td>2012/03/29</td>
-                                                            
-                                                            
-                                                            <td>2012/03/29</td>
-                                                            
-                                                            <td>30%</td>
-                                                            <td>The Chihuahua</td>
-                                                            <!-- <td>5</td> -->
-                                                            
-                                                            
-                                                            </tr>
-                                                                <td>2012/03/29</td>
-                                                                
-                                                                
-                                                                <td>2012/03/29</td>
-                                                                
-                                                                <td>30%</td>
-                                                                <td>The Chihuahua</td>
-                                                                <!-- <td>5</td> -->
-                                                                
-                                                                
-                                                                </tr>
-                                                                
-                                               
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
 
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+
+
+
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>2012/03/29</td>
+
+
+                                                <td>2012/03/29</td>
+
+                                                <td>30%</td>
+                                                <td>The Chihuahua</td>
+                                                <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <td>2012/03/29</td>
+
+
+                                            <td>2012/03/29</td>
+
+                                            <td>30%</td>
+                                            <td>The Chihuahua</td>
+                                            <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <td>2012/03/29</td>
+
+
+                                            <td>2012/03/29</td>
+
+                                            <td>30%</td>
+                                            <td>The Chihuahua</td>
+                                            <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <td>2012/03/29</td>
+
+
+                                            <td>2012/03/29</td>
+
+                                            <td>30%</td>
+                                            <td>The Chihuahua</td>
+                                            <!-- <td>5</td> -->
+
+
+                                            </tr>
+                                            <td>2012/03/29</td>
+
+
+                                            <td>2012/03/29</td>
+
+                                            <td>30%</td>
+                                            <td>The Chihuahua</td>
+                                            <!-- <td>5</td> -->
+
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
-
-
-
-                    <div class="card shadow  card-body mb-4  col-lg-12 card ">
-
-
-                        <div class="card-body" style='height: 500px' ;>
-                            <h6 class="m-0 font-weight-bold text-primary">Consumptions By Month</h6>
-                            <div class="h-100">
-                                <canvas h-100 id="consumers_month"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow  card-body mb-4  col-lg-12 card ">
-
-
-                        <div class="card-body" style='height: 500px' ;>
-                            <h6 class="m-0 font-weight-bold text-primary">Consumptions Year</h6>
-                            <div class="h-100">
-                                <canvas h-100 id="consumers_year"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
 
@@ -589,13 +646,27 @@
 
 
 
+                <div class="card shadow  card-body mb-4  col-lg-12 card ">
 
 
+                    <div class="card-body" style='height: 500px' ;>
+                        <h6 class="m-0 font-weight-bold text-primary">Consumptions By Month</h6>
+                        <div class="h-100">
+                            <canvas h-100 id="consumers_month"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow  card-body mb-4  col-lg-12 card ">
 
 
-
-
-
+                    <div class="card-body" style='height: 500px' ;>
+                        <h6 class="m-0 font-weight-bold text-primary">Consumptions Year</h6>
+                        <div class="h-100">
+                            <canvas h-100 id="consumers_year"></canvas>
+                        </div>
+                    </div>
+                </div>
 
 
             </div>
@@ -605,14 +676,29 @@
 
 
 
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span> &copy;Rilix 2024</span>
-                    </div>
-                </div>
+
+
+
+
+
+
+
+
         </div>
-        </footer>
+
+
+
+
+
+
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span> &copy;Rilix 2024</span>
+                </div>
+            </div>
+    </div>
+    </footer>
     </div>
     </div>
     </div>
