@@ -221,6 +221,12 @@
 
 
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="../pages/news.html">
+                                            <i class="fas fa-rss"></i>
+                                            <span>Rilix News</span></a>
+
+                                    </li>
 
                                     <li class="nav-item">
                                         <a class="nav-link text-white" href="#">
@@ -276,41 +282,157 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <h1 class='display-1 text-center'> ON DEV</h1>
-            </div>
+                <div class="container-fluid noPaddingOnPhone">
+                    <div class='row justify-content-between  m-2 hidInPhone'>
+                        <div>
+                            <p class='gray mt-2'>My Licence: 748395787</p>
+                        </div>
+
+                        <div class="row d-flex justify-content-end">
+                            <div class="nav-item dropdown no-arrow text-right text-white">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="d-none d-lg-inline  d-sm-inline  pr-2 hidInPhone text-gray-800">Douglas
+                                        McGee
+                                    </span>
+
+                                </a>
+
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                        Profile
+                                    </a>
 
 
+                                    <div class="dropdown-divider "></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray"></i>
+                                        Logout
+                                    </a>
+                                </div>
 
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span> &copy;Rilix 2024</span>
+                            </div>
+                            <img class=" img-profile rounded-circle mr-3" src="../img/undraw_profile.svg"
+                                style='height: 35px;'>
+                        </div>
                     </div>
+
+
+
+
+
+
+
+                    <div class="card shadow  card-body mb-4 hidInPhone col-lg-12 card ">
+
+
+                        <div class="card-body  align-items-center d-flex flex-row justify-content-between">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-xl-12 col-lg-10 col-md-6 col-auto">
+
+                                    <div class=" text-xl font-weight-bold text-dark text-uppercase mb-4">
+
+
+                                        Licence: Laurentina (here we put the NAME of the licence)
+                                    </div>
+                                    <span> <strong>Key:</strong> 66786786557674645342311</span>
+                                    <br>
+                                    <span> <strong>Location:</strong> BLumenau</span>
+                                    <br>
+                                    <span> <strong>Obs:</strong> Licence on the book club.</span>
+
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- week card -->
+
+                    <div class="card shadow  card-body mb-4 hidInPhone col-lg-12 card ">
+
+
+                        <div class="card-body" style='height: 500px' ;>
+                            <h6 class="m-0 font-weight-bold text-primary">Consumptions week comparison</h6>
+                            <div class="h-100">
+                                <canvas h-100 id="consumers_comparative"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow  card-body mb-4 hidInPhone col-lg-12 card ">
+
+
+                        <div class="card-body" style='height: 500px' ;>
+                            <h6 class="m-0 font-weight-bold text-primary">Consumptions Month</h6>
+                            <div class="h-100">
+                                <canvas h-100 id="consumers_month"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow  card-body mb-4 hidInPhone col-lg-12 card ">
+
+
+                        <div class="card-body" style='height: 500px' ;>
+                            <h6 class="m-0 font-weight-bold text-primary">Consumptions Year</h6>
+                            <div class="h-100">
+                                <canvas h-100 id="consumers_year"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span> &copy;Rilix 2024</span>
+                            </div>
+                        </div>
                 </div>
+                </footer>
+            </div>
         </div>
-        </footer>
-    </div>
-    </div>
     </div>
 
 </body>
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="/js/sb-admin-2.min.js"></script>
+<script src="../js/sb-admin-2.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="/vendor/chart.js/Chart.min.js"></script>
+<script src="../vendor/chart.js/Chart.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="/js/demo/chart-area-demo.js"></script>
-<script src="/js/demo/chart-pie-demo.js"></script>
-<script src="/js/demo/demoniandia/consumers.js"></script>
-<script src="/path/to/cdn/fecha.min.js"></script>
+<script src="../js/demo/chart-area-demo.js"></script>
+<script src="../js/demo/chart-pie-demo.js"></script>
+<script src="../js/demo/demoniandia/consumers_month.js"></script>
+<script src="../js/demo/demoniandia/consumers_year.js"></script>
+<script src="../js/demo/demoniandia/consumers_comparative.js"></script>
+
+<script src="../path/to/cdn/fecha.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
 
