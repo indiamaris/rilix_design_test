@@ -1,4 +1,11 @@
 .rilixIcon{width: 60px;transform: rotate(15deg);}
+.spacing{
+  height: 25px;
+}
+
+.spacingo{
+  height: 25px;
+}
 
 .banner{
   background-position: center;
@@ -13,7 +20,13 @@
     border-color: #1652f0;
     background: #1652f0;
 }
+.storeOnScreaming{
+  padding-right: 11%;
 
+  padding-left: 11%;
+
+padding-top: 6%;
+}
 .coin-svg{
   margin-bottom: 10%;
 
@@ -81,17 +94,58 @@ padding: 15px;
      .hidInPhone {
     display:none;}
 
+    storeOnPhone{
+      padding: auto;
+    }
+
+    .storeOnScreaming{
+  padding-right: 0;
+
+  padding-left: 0;
+
+padding-top: 0;
+}
+
 };
 
 
 
+@media screen and (max-width: 1500px) {
+
+
+    .storeOnScreaming{
+  padding-right: 0;
+
+  padding-left: 0;
+
+padding-top: 0;
+}
+
+  .spacingo{
+    height: 0px
+  }
+
+};
 
 
 
 @media screen and (max-width: 1465px) {
 .pricing-card-title{
-  font-size: 2rem;
+  font-size: 1rem;
 };
+
+.storeOnScreaming{
+  padding-right: 2%;
+
+  padding-left: 2%;
+
+padding-top: 2%;
+  font-size: 10 px;
+}
+
+  .spacingo{
+    height: 0px
+  }
 
 
 }
@@ -100,19 +154,27 @@ padding: 15px;
 
 
 @media screen and (max-width: 1500px) {
-.pricing-card-title{
-  font-size: 3rem;
-  
-};
+
+
+.storeOnScreaming{
+  padding-right: 5%;
+
+  padding-left: 5%;
+
+padding-top: 2%;
+}
+
+  .spacing{
+    height: 20px
+  }
+
+    .spacingo{
+    height: 18px
+  }
 
 
 };
 
-@media screen and (-width: 1500px) {
-.pricing-card-title{
-  font-size: 3rem;
-  
-};}
 
 
 
