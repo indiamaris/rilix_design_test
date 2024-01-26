@@ -1,323 +1,79 @@
+// Set new default font family and font color to mimic Bootstrap's default styling
+Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = '#858796';
 
-
-
-//fake data 
-
-var data  = [
-    {
-        month: '1', nested:
-            { count: 10, countB: 290, countD: 870, countE: 20, countF: 780, countG: 200, countH: 200, countI: 200, countJ: 200, countK: 200, countL: 200 }
-    },
-    {
-        month: '2', nested:
-            { count: 23, countB: 200, countD: 200, countE: 20, countF: 200, countG: 200, countH: 200, countI: 200, countJ: 60, countK: 200, countL: 200 }
-    },
-    {
-        month: '3', nested:
-            { count: 70, countB: 200, countD: 26, countE: 200, countF: 200, countG: 200, countH: 200, countI: 200, countJ: 20, countK: 200, countL: 200 }
-    },
-        {
-        month: '4', nested:
-            { count: 120, countB: 40, countD: 20, countE: 200, countF: 500, countG: 700, countH: 200, countI: 200, countJ: 70, countK: 600, countL: 800 }
-    },
-    {
-        month: '5', nested:
-            { count: 150, countB: 340, countD: 20, countE: 700, countF: 500, countG: 270, countH: 900, countI: 120, countJ: 20, countK: 260, countL: 987 }
-    },
-    {
-        month: '6', nested:
-            { count: 40, countB: 670, countD: 950, countE: 900, countF: 500, countG: 290, countH: 900, countI: 190, countJ: 760, countK: 260, countL: 890 }
-    },
-    {
-        month: '7', nested:
-            { count: 30, countB: 23, countD: 650, countE: 270, countF: 290, countG: 223, countH: 200, countI: 200, countJ: 890, countK: 200, countL: 600 }
-    },
-    {
-        month: '8', nested:
-            { count: 15, countB: 230, countD: 25, countE: 200, countF: 900, countG: 20, countH: 200, countI: 270, countJ: 200, countK: 340, countL: 500 }
-    },
-    {
-        month: '9', nested:
-            { count: 10, countB: 70, countD: 260, countE: 243, countF: 290, countG: 26, countH: 980, countI: 130, countJ: 20, countK: 90, countL: 700 }
-    },
-    {
-        month: '10', nested:
-            { count: 145, countB: 200, countD: 270, countE: 900, countF: 600, countG: 400, countH: 200, countI: 800, countJ: 290, countK: 200, countL: 900 }
-  },
-    
-    {
-        month: '11', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
+function number_format(number, decimals, dec_point, thousands_sep) {
+  // *     example: number_format(1234.56, 2, ',', ' ');
+  // *     return: '1 234,56'
+  number = (number + '').replace(',', '').replace(' ', '');
+  var n = !isFinite(+number) ? 0 : +number,
+    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+    dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+    s = '',
+    toFixedFix = function(n, prec) {
+      var k = Math.pow(10, prec);
+      return '' + Math.round(n * k) / k;
+    };
+  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+  s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+  if (s[0].length > 3) {
+    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
   }
-    ,
-    {
-        month: '12', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-  ,
-    {
-        month: '13', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '14', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '15', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '16', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-     ,
-    {
-        month: '17', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '18', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '19', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '20', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '21', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '22', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '23', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '24', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '25', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '26', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '27', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '28', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '29', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '30', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    }
-    ,
-    {
-        month: '31', nested:
-            { count: 10, countB: 12, countD: 890, countE: 100, countF: 200, countG: 270, countH: 200, countI: 60, countJ: 50, countK: 20, countL: 90 }
-    },
-    
-    
-    
-    
-]
-  
-//fim fake data
-var ctx = document.getElementById('consumers_month')
- 
-var consumers = new Chart(ctx,   {
-  type: 'bar', responsive:true,
-  
-      data: {
-        labels: data.map(row => row.month), 
-        
-        datasets: [
-          {
-            label: 'Disney Orlando',
-                 backgroundColor: "#ffb800",
-      hoverBackgroundColor: "#ffb800",
-      borderColor: "#ffb800",
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.count)
-          },
-          {
-             backgroundColor: "red",
-      hoverBackgroundColor: "#red",
-      borderColor: "#red",
-            label: 'Disney France',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countB)
-          }
-          ,
-          {
-             backgroundColor: "#FFCCFF",
-      hoverBackgroundColor: "#FFCCFF",
-      borderColor: "#FFCCFF",
-            label: 'Disney Itajai',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countC)
-          }
-          ,
-          {
-             backgroundColor: "pink",
-      hoverBackgroundColor: "pink",
-      borderColor: "pink",
-            label: ' Beto Carreiro',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countD)
-          }
-          ,
-          {
-             backgroundColor: "#CCE5FF",
-      hoverBackgroundColor: "#CCFFFF",
-      borderColor: "#CCFFFF",
-            label: 'Loja do Zeh',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countE)
-          }
-          ,
-          {
-             backgroundColor: "#55ff00",
-      hoverBackgroundColor: "#55ff00",
-      borderColor: "#55ff00",
-            label: 'BC Shopping',
-             barThickness: 5,
-            data: data.map(row => row.nested.countF)
-          }
-          ,
-          {
-             backgroundColor: "#ff00fc",
-      hoverBackgroundColor: "#ff00fc",
-      borderColor: "#ff00fc",
-            label: 'Camelo',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countG)
-          }
-          ,
-          {
-                backgroundColor: "#00ffa7",
-      hoverBackgroundColor:"#00ffa7",
-      borderColor: "#00ffa7",
-            label: 'Rocinha',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countH)
-          }
-          ,
-          {
-             backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#4e73df",
-      borderColor: "#4e73df",
-            label: 'Holywod',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countI)
-          }
-          ,
-          {
-             backgroundColor: "#00fffb",
-      hoverBackgroundColor: "#00fffb",
-      borderColor: "#00fffb",
-            label: 'casa de lares',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countJ)
-          }
-           ,
-          {
-             backgroundColor: "#c4ff00",
-      hoverBackgroundColor: "#c4ff00",
-      borderColor: "#c4ff00",
-            label: 'Indialandia',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countH)
-          },
-          {
-             backgroundColor: "#2e59d9",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#2e59d9",
-            label: 'Ali do lado',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countK)
-          },
-          {
-             backgroundColor: "#ff007a",
-      hoverBackgroundColor:  "#ff007a",
-      borderColor: "#ff007a",
-            label: 'Adilsonlandia',
-             barThickness: 5
-             ,
-            data: data.map(row => row.nested.countL)
-          }, 
-        ] },
+  if ((s[1] || '').length < prec) {
+    s[1] = s[1] || '';
+    s[1] += new Array(prec - s[1].length + 1).join('0');
+  }
+  return s.join(dec);
+}
+
+var numbersArray = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
+
+// Bar Chart Example
+var ctx = document.getElementById("consumers_month");
+var myBarChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels:numbersArray,
+    datasets: [{
+      label: "Revenue",
+      backgroundColor: "green",
+      hoverBackgroundColor: "green", 
+      borderColor: "green",
+   
+      data: [ 5312, 6251, 7841, 9821, 14984 ,  9821, 14984 ,  6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
+    }],
+  },
   options: {
     maintainAspectRatio: false,
     layout: {
       padding: {
         left: 0,
         right: 0,
-        top: 0,
+        top: 10,
         bottom: 0
       }
     },
     scales: {
       xAxes: [{
         time: {
-          unit: 'date'
+          unit: 'month'
         },
         gridLines: {
           display: false,
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 31
-        }
+          maxTicksLimit:126
+        },
+        maxBarThickness: 31,
       }],
       yAxes: [{
         ticks: {
-          maxTicksLimit: 31,
-          padding: 0,
+          min: 0,
+          max: 15000,
+          maxTicksLimit: 5,
+          padding: 4,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
             return '$' + number_format(value);
@@ -336,27 +92,23 @@ var consumers = new Chart(ctx,   {
       display: false
     },
     tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      title3ginBottom: 10,
+      titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
       yPadding: 15,
       displayColors: false,
-      intersect: false,
-      mode: 'index',
-      caretPadding: 12,
+      caretPadding: 10,
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
           return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
         }
       }
-    }
-  }, 
- 
+    },
+  }
 });
- 
