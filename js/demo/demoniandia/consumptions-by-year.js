@@ -30,19 +30,20 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 var numbersArray = Array.from({ length: 31 }, (_, index) => (index + 1).toString());
 
 // Bar Chart Example
-var ctx = document.getElementById("consumers_month");
+var ctx = document.getElementById("consumptions-by-year");
 var myBarChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'line',
   data: {
-    labels:numbersArray,
+    labels: ["January", "February", "March", "April", "May", "June", "july", "August", "September","November", "December"],
     datasets: [{
       label: "Revenue",
-      backgroundColor: "#224abe",
-      hoverBackgroundColor: "green", 
-      borderColor: "black",
-    
+     backgroundColor: "#224abe",
+      hoverBackgroundColor: "black",
+      borderColor: "#4e73df",
+      // tension: 0,
+      fill:false,
    
-      data: [ 5312, 6251, 7841, 9821, 14984 ,  9821, 14984 ,  6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821, 14984 , 5312, 6251, 7841, 9821,9821, 14984 ,  9821, 14984 ,   14984 , 5312, 6251, 7841, 9821, 14984, 7841],
+      data: [ 5300, 6251, 7841, 8082, 10900 ,  9821, 14984 ,  6251, 7841, 9821,2397,1090],
     }],
   },
   options: {
@@ -51,7 +52,7 @@ var myBarChart = new Chart(ctx, {
       padding: {
         left: 0,
         right: 0,
-        top: 25,
+        top: 30,
         bottom: 0
       }
     },
@@ -65,9 +66,9 @@ var myBarChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit:7
+          maxTicksLimit:12
         },
-        maxBarThickness: 15,
+        maxBarThickness: 10,
       }],
       yAxes: [{
         ticks: {
