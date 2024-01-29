@@ -151,12 +151,12 @@
                 <div class="bd-example ">
                     <div class="pos-f-t  ">
                         <!-- aqui temos o botaozinho de navbar lindissimo -->
-                        <nav class="navbar bg-primary d-flex  justify-content-between align-items-center "
+                        <nav class="navbar bg-primary d-flex  justify-content-between align-items-center w-25 "
                             style='height: 50px'>
                             <p class='text-white bg-primary'><img style='height: 35px' src="./img/rilix-logo-white.svg"
                                     alt=""></p>
                             <button class="navbar-toggler border-0 text-white pb-3" type="button" data-toggle="collapse"
-                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                data-target="#navbarToggleExternalContent" `aria-controls="navbarToggleExternalContent"
                                 aria-expanded="true" aria-label="Toggle navigation ">
                                 <i class="fas fa-solid fa-bars"></i>
                             </button>
@@ -266,7 +266,8 @@
                                                     class="d-none d-lg-inline   d-sm-inline  pr-2 hidInPhone text-white">Douglas
                                                     McGee
                                                 </span>
-                                                <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
+                                            Douglas
+                                            McGee  <img class=" img-profile rounded-circle" src="img/undraw_profile.svg"
                                                     style='height: 35px;'>
                                             </a>
                                         </div>
@@ -603,55 +604,16 @@
                         <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12  overflow-auto">
 
                             <!-- Project Card Example -->
-                            <div class="card shadow h-100 overflow-auto   ">
+                            <div class="card shadow h-100 overflow-hidden   ">
 
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Top Hight and Low Active Licences
+                                    <h6 class="m-0 font-weight-bold text-primary"> Active Licences
                                     </h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-calendar-alt "></i>
-
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-
-
-                                            <div>
-                                                <div class='datapicker'>
-                                                    <div class="container fs-2">
-                                                        Start Date: <input id="startDate" width="150" />
-                                                        End Date: <input id="endDate" width="150" />
-                                                    </div>
-                                                    <script>
-                                                        var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-                                                        $('#startDate').datepicker({
-                                                            uiLibrary: 'bootstrap4',
-                                                            iconsLibrary: 'fontawesome',
-                                                            minDate: today,
-                                                            maxDate: function () {
-                                                                return $('#endDate').val();
-                                                            }
-                                                        });
-                                                        $('#endDate').datepicker({
-                                                            uiLibrary: 'bootstrap4',
-                                                            iconsLibrary: 'fontawesome',
-                                                            minDate: function () {
-                                                                return $('#startDate').val();
-                                                            }
-                                                        });
-                                                    </script>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                              
                                 </div>
-                                <div class="card-body p-4 mr-4" style="height: 500px;">
+                                <div class="card-body p-4 mr-4 overflow-auto" style="height: 300px;">
 
                                     <h4 class="small font-weight-bold">Licence X <span class="float-right">119
                                             rides</span>
@@ -697,26 +659,12 @@
 
                                     <h4 class="small font-weight-bold">Licence Z <span class="float-right"> 20 rides
                                         </span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
-                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="110"></div>
-                                    </div>
+                                 
 
-
-                                    <h4 class="small font-weight-bold">Licence Z <span class="float-right"> 20 rides
-                                        </span>
-                                    </h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
-                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="110"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Licence Z <span class="float-right"> 20 rides
-                                        </span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
-                                            aria-valuenow="10" aria-valuemin="0" aria-valuemax="110" mb-4></div>
-
-                                    </div>
+<div class='text-center'><button class='btn btn-primary'> Load more</button></div>
+                                  
+                                 
+                                  
                                     <div style='height: 5px;'></div>
                                 </div>
                             </div>
