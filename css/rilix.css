@@ -8,6 +8,12 @@ a, button {
     all: unset;
 }
 
+  .tableFixHead thead th {
+        position: sticky; /* make the table heads sticky */
+        top: 0px; /* table head will be placed from the top of the table and sticks to it */
+      }
+      
+
 a{
   
     text-decoration: none;

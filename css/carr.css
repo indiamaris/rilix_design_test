@@ -114,5 +114,33 @@ text-align: center;
     border-radius:50%;
 }
 
+.btnCoaster{
+ display: inline-block;
+ padding: 4px;
+    width: 90px;
+    height:30px;
+
+    border-radius: 5px;
+    background-color: #94efa2;
+    opacity: 0.6;
+
+    text:center;
+
+}
+
+.btnCoasterText{
+  color:#06a91e;
+      opacity: 1;
+}
+
+.tableContainer{
+  height: 750px;
+margin-left: 8px;
+margin-right: 8px;
+  overflow: auto;
+  /* background-color: gray; */
+}
+
+
 
 
