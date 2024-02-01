@@ -293,3 +293,72 @@ margin-top: 0%;
   padding: 0;
   margin: 0;
 }
+
+.coasterBalls{
+  background-color: #7fe9bd58;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #229910;
+  padding: 0px;
+  border:0;
+  border-radius: 50px;
+}
+
+.bluebluebtn{
+  background-color: #2595bebe;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.grengrenbtn{
+    background-color: #25be4e8e;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pinkpinkbtn{
+
+     background-color: #be25aa5e;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.purplebtn{
+
+       background-color: #e6cc0198;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+
+
+.yellowbtn{ background-color: #3601e682;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
